@@ -1,0 +1,16 @@
+com.example.next_match.app-appcompat-1.0.0-0 /Users/marwanmagdy/.gradle/caches/transforms-3/0694ac62ac72c2f9a514dadf0b04fcb6/transformed/appcompat-1.0.0/res
+com.example.next_match.app-jetified-play-services-base-17.6.0-1 /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/res
+com.example.next_match.app-coordinatorlayout-1.0.0-2 /Users/marwanmagdy/.gradle/caches/transforms-3/46c575b90a4ec48ce53e22e172f34645/transformed/coordinatorlayout-1.0.0/res
+com.example.next_match.app-jetified-annotation-experimental-1.1.0-3 /Users/marwanmagdy/.gradle/caches/transforms-3/50620739ae67525a3c887f917e53222e/transformed/jetified-annotation-experimental-1.1.0/res
+com.example.next_match.app-jetified-play-services-basement-17.6.0-4 /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/res
+com.example.next_match.app-jetified-window-java-1.0.0-beta04-5 /Users/marwanmagdy/.gradle/caches/transforms-3/b0704b991a21a265cfa6cbe621a133c1/transformed/jetified-window-java-1.0.0-beta04/res
+com.example.next_match.app-jetified-window-1.0.0-beta04-6 /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/res
+com.example.next_match.app-core-1.6.0-7 /Users/marwanmagdy/.gradle/caches/transforms-3/e970a6f182591c783eb9a6736f54ad25/transformed/core-1.6.0/res
+com.example.next_match.app-debug-8 /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/res
+com.example.next_match.app-main-9 /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/res
+com.example.next_match.app-pngs-10 /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/app/generated/res/pngs/debug
+com.example.next_match.app-resValues-11 /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/app/generated/res/resValues/debug
+com.example.next_match.app-rs-12 /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/app/generated/res/rs/debug
+com.example.next_match.app-mergeDebugResources-13 /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.example.next_match.app-mergeDebugResources-14 /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.example.next_match.app-merged_res-15 /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/app/intermediates/merged_res/debug

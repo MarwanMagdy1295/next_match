@@ -1,0 +1,1 @@
+ /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/.dart_tool/flutter_build/ce9bba15bd75e363b435c607e1f7e98c/native_assets.yaml: 

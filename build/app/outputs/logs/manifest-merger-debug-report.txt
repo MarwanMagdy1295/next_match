@@ -1,0 +1,208 @@
+-- Merging decision tree log ---
+application
+INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml:2:5-32:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [com.android.installreferrer:installreferrer:2.2] /Users/marwanmagdy/.gradle/caches/transforms-3/041583ee2eed571b58b1cdbd35a2bde7/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:11:5-20
+MERGED from [com.android.installreferrer:installreferrer:2.2] /Users/marwanmagdy/.gradle/caches/transforms-3/041583ee2eed571b58b1cdbd35a2bde7/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.gms:play-services-appset:16.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/df441f4f082927133dc6abdc32b0030b/transformed/jetified-play-services-appset-16.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-appset:16.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/df441f4f082927133dc6abdc32b0030b/transformed/jetified-play-services-appset-16.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/3316a1d837a641d384b50a713ebb34a7/transformed/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/3316a1d837a641d384b50a713ebb34a7/transformed/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.2.1] /Users/marwanmagdy/.gradle/caches/transforms-3/b6aeb7f8c05fece077f26cae063b8542/transformed/jetified-play-services-tasks-17.2.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.2.1] /Users/marwanmagdy/.gradle/caches/transforms-3/b6aeb7f8c05fece077f26cae063b8542/transformed/jetified-play-services-tasks-17.2.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/e970a6f182591c783eb9a6736f54ad25/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/e970a6f182591c783eb9a6736f54ad25/transformed/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/marwanmagdy/.gradle/caches/transforms-3/0dc8ed92b260459d014c8cf5ab127184/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/marwanmagdy/.gradle/caches/transforms-3/0dc8ed92b260459d014c8cf5ab127184/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/e970a6f182591c783eb9a6736f54ad25/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+	android:name
+		INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml
+manifest
+ADDED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml:1:1-33:12
+MERGED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml:1:1-33:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/b0704b991a21a265cfa6cbe621a133c1/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0694ac62ac72c2f9a514dadf0b04fcb6/transformed/appcompat-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.installreferrer:installreferrer:2.2] /Users/marwanmagdy/.gradle/caches/transforms-3/041583ee2eed571b58b1cdbd35a2bde7/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-appset:16.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/df441f4f082927133dc6abdc32b0030b/transformed/jetified-play-services-appset-16.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/3316a1d837a641d384b50a713ebb34a7/transformed/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.2.1] /Users/marwanmagdy/.gradle/caches/transforms-3/b6aeb7f8c05fece077f26cae063b8542/transformed/jetified-play-services-tasks-17.2.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/marwanmagdy/.gradle/caches/transforms-3/00c1da4462219119d4a09080bc895100/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/d04453ffb5ac9e5b2594f668c7a8da12/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/73e0274fd8446ca127bf7e14dac3a0cd/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/a1e1f72d3b37fe9474a277f5f991745c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ba743860ec8daba4e49fa16cd9eb3ae5/transformed/vectordrawable-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/85fc69ac22e379f129188e7dd4ce9766/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/076daf691e96e14a4d9d079579d83919/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/9b338bcaf31c384508e2b8305713213c/transformed/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/46c575b90a4ec48ce53e22e172f34645/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/d62e69849f3d0d2c662f700502ed2611/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/6a93f843c8300db1400dc4edfefdf34e/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/147e4399605fd47c5dfc6943f7572854/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/22e905acfba607affbe34ef93fabaf63/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/f99df329f8a4192a18d820a09d2ef026/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/e970a6f182591c783eb9a6736f54ad25/transformed/core-1.6.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/marwanmagdy/.gradle/caches/transforms-3/3b04bbf93aaa307e0c3f1a3a3e400d6d/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/7903cb5db2f0264b006ce1513d96d895/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/17bd7a1f9a92812710f7ec1adce58ff1/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/cc05dff2d08e95d3f8d57dbe08cbf39a/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/bfb6559ecc4d185963301135c79b4050/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/d24cdbd7f1e96177d0aea24441b5c176/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ba178be6eeded234c951fbc982271833/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/marwanmagdy/.gradle/caches/transforms-3/0dc8ed92b260459d014c8cf5ab127184/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/766d40f9b76dc5552ac3e2d3e19fba6c/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/f00f4b512a1546e25d9e49e1f53d0edc/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/2b7a4647fa2ddb59b8062afa8dc53857/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/marwanmagdy/.gradle/caches/transforms-3/c66c0c2201b46ee69f0d1d18f0fcb798/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/fb7e71ce76905ad1805281890367278d/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/marwanmagdy/.gradle/caches/transforms-3/50620739ae67525a3c887f917e53222e/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+	package
+		INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/b0704b991a21a265cfa6cbe621a133c1/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/b0704b991a21a265cfa6cbe621a133c1/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0694ac62ac72c2f9a514dadf0b04fcb6/transformed/appcompat-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0694ac62ac72c2f9a514dadf0b04fcb6/transformed/appcompat-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.installreferrer:installreferrer:2.2] /Users/marwanmagdy/.gradle/caches/transforms-3/041583ee2eed571b58b1cdbd35a2bde7/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.installreferrer:installreferrer:2.2] /Users/marwanmagdy/.gradle/caches/transforms-3/041583ee2eed571b58b1cdbd35a2bde7/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-appset:16.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/df441f4f082927133dc6abdc32b0030b/transformed/jetified-play-services-appset-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-appset:16.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/df441f4f082927133dc6abdc32b0030b/transformed/jetified-play-services-appset-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/3316a1d837a641d384b50a713ebb34a7/transformed/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/3316a1d837a641d384b50a713ebb34a7/transformed/jetified-play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.2.1] /Users/marwanmagdy/.gradle/caches/transforms-3/b6aeb7f8c05fece077f26cae063b8542/transformed/jetified-play-services-tasks-17.2.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.2.1] /Users/marwanmagdy/.gradle/caches/transforms-3/b6aeb7f8c05fece077f26cae063b8542/transformed/jetified-play-services-tasks-17.2.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/marwanmagdy/.gradle/caches/transforms-3/00c1da4462219119d4a09080bc895100/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/marwanmagdy/.gradle/caches/transforms-3/00c1da4462219119d4a09080bc895100/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/d04453ffb5ac9e5b2594f668c7a8da12/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/d04453ffb5ac9e5b2594f668c7a8da12/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/73e0274fd8446ca127bf7e14dac3a0cd/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/73e0274fd8446ca127bf7e14dac3a0cd/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/a1e1f72d3b37fe9474a277f5f991745c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/a1e1f72d3b37fe9474a277f5f991745c/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ba743860ec8daba4e49fa16cd9eb3ae5/transformed/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ba743860ec8daba4e49fa16cd9eb3ae5/transformed/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/85fc69ac22e379f129188e7dd4ce9766/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/85fc69ac22e379f129188e7dd4ce9766/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/076daf691e96e14a4d9d079579d83919/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/076daf691e96e14a4d9d079579d83919/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/9b338bcaf31c384508e2b8305713213c/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/9b338bcaf31c384508e2b8305713213c/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/46c575b90a4ec48ce53e22e172f34645/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/46c575b90a4ec48ce53e22e172f34645/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/d62e69849f3d0d2c662f700502ed2611/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/d62e69849f3d0d2c662f700502ed2611/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/6a93f843c8300db1400dc4edfefdf34e/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/6a93f843c8300db1400dc4edfefdf34e/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/147e4399605fd47c5dfc6943f7572854/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/147e4399605fd47c5dfc6943f7572854/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/22e905acfba607affbe34ef93fabaf63/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/22e905acfba607affbe34ef93fabaf63/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/f99df329f8a4192a18d820a09d2ef026/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/f99df329f8a4192a18d820a09d2ef026/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/e970a6f182591c783eb9a6736f54ad25/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/e970a6f182591c783eb9a6736f54ad25/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/marwanmagdy/.gradle/caches/transforms-3/3b04bbf93aaa307e0c3f1a3a3e400d6d/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/marwanmagdy/.gradle/caches/transforms-3/3b04bbf93aaa307e0c3f1a3a3e400d6d/transformed/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/7903cb5db2f0264b006ce1513d96d895/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/7903cb5db2f0264b006ce1513d96d895/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/17bd7a1f9a92812710f7ec1adce58ff1/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/17bd7a1f9a92812710f7ec1adce58ff1/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/cc05dff2d08e95d3f8d57dbe08cbf39a/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/cc05dff2d08e95d3f8d57dbe08cbf39a/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/bfb6559ecc4d185963301135c79b4050/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/bfb6559ecc4d185963301135c79b4050/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/d24cdbd7f1e96177d0aea24441b5c176/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/d24cdbd7f1e96177d0aea24441b5c176/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ba178be6eeded234c951fbc982271833/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ba178be6eeded234c951fbc982271833/transformed/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/marwanmagdy/.gradle/caches/transforms-3/0dc8ed92b260459d014c8cf5ab127184/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/marwanmagdy/.gradle/caches/transforms-3/0dc8ed92b260459d014c8cf5ab127184/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/766d40f9b76dc5552ac3e2d3e19fba6c/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/766d40f9b76dc5552ac3e2d3e19fba6c/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/f00f4b512a1546e25d9e49e1f53d0edc/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/f00f4b512a1546e25d9e49e1f53d0edc/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/2b7a4647fa2ddb59b8062afa8dc53857/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/2b7a4647fa2ddb59b8062afa8dc53857/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/marwanmagdy/.gradle/caches/transforms-3/c66c0c2201b46ee69f0d1d18f0fcb798/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/marwanmagdy/.gradle/caches/transforms-3/c66c0c2201b46ee69f0d1d18f0fcb798/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/fb7e71ce76905ad1805281890367278d/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/marwanmagdy/.gradle/caches/transforms-3/fb7e71ce76905ad1805281890367278d/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/marwanmagdy/.gradle/caches/transforms-3/50620739ae67525a3c887f917e53222e/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/marwanmagdy/.gradle/caches/transforms-3/50620739ae67525a3c887f917e53222e/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml:6:22-64
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.android.installreferrer:installreferrer:2.2] /Users/marwanmagdy/.gradle/caches/transforms-3/041583ee2eed571b58b1cdbd35a2bde7/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:9:5-110
+	android:name
+		ADDED from [com.android.installreferrer:installreferrer:2.2] /Users/marwanmagdy/.gradle/caches/transforms-3/041583ee2eed571b58b1cdbd35a2bde7/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:9:22-107
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
