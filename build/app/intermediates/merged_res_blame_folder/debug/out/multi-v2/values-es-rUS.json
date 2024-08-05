@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.next_match.app-mergeDebugResources-13:/values-es-rUS/values-es-rUS.xml",
+            "outputFile": "com.example.next_match.app-mergeDebugResources-15:/values-es-rUS/values-es-rUS.xml",
             "map": [
                 {
                     "source": "/Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/res/values-es-rUS/values.xml",
@@ -13,28 +13,28 @@
                         "endOffsets": "455"
                     },
                     "to": {
-                        "startLines": "37",
+                        "startLines": "44",
                         "startColumns": "4",
-                        "startOffsets": "4031",
+                        "startOffsets": "4763",
                         "endColumns": "204",
-                        "endOffsets": "4231"
+                        "endOffsets": "4963"
                     }
                 },
                 {
-                    "source": "/Users/marwanmagdy/.gradle/caches/transforms-3/e970a6f182591c783eb9a6736f54ad25/transformed/core-1.6.0/res/values-es-rUS/values-es-rUS.xml",
+                    "source": "/Users/marwanmagdy/.gradle/caches/transforms-3/691088abf813ded121e93767daa341ab/transformed/core-1.10.1/res/values-es-rUS/values-es-rUS.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,356,454,561,667,787",
+                        "endColumns": "98,101,99,97,106,105,119,100",
+                        "endOffsets": "149,251,351,449,556,662,782,883"
                     },
                     "to": {
-                        "startLines": "48",
-                        "startColumns": "4",
-                        "startOffsets": "5738",
-                        "endColumns": "100",
-                        "endOffsets": "5834"
+                        "startLines": "29,30,31,32,33,34,35,59",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "2838,2937,3039,3139,3237,3344,3450,6902",
+                        "endColumns": "98,101,99,97,106,105,119,100",
+                        "endOffsets": "2932,3034,3134,3232,3339,3445,3565,6998"
                     }
                 },
                 {
@@ -47,11 +47,28 @@
                         "endOffsets": "220,329,437,522,623,746,831,913,1004,1097,1193,1287,1387,1480,1579,1675,1766,1857,1939,2051,2151,2252,2360,2467,2574,2733,2833,2915"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,47",
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,58",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,225,334,442,527,628,751,836,918,1009,1102,1198,1292,1392,1485,1584,1680,1771,1862,1944,2056,2156,2257,2365,2472,2579,2738,5656",
+                        "startOffsets": "105,225,334,442,527,628,751,836,918,1009,1102,1198,1292,1392,1485,1584,1680,1771,1862,1944,2056,2156,2257,2365,2472,2579,2738,6820",
                         "endColumns": "119,108,107,84,100,122,84,81,90,92,95,93,99,92,98,95,90,90,81,111,99,100,107,106,106,158,99,81",
-                        "endOffsets": "220,329,437,522,623,746,831,913,1004,1097,1193,1287,1387,1480,1579,1675,1766,1857,1939,2051,2151,2252,2360,2467,2574,2733,2833,5733"
+                        "endOffsets": "220,329,437,522,623,746,831,913,1004,1097,1193,1287,1387,1480,1579,1675,1766,1857,1939,2051,2151,2252,2360,2467,2574,2733,2833,6897"
+                    }
+                },
+                {
+                    "source": "/Users/marwanmagdy/.gradle/caches/transforms-3/662c85ece222284f1f7957ccc2b40c61/transformed/browser-1.5.0/res/values-es-rUS/values-es-rUS.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,164,266,381",
+                        "endColumns": "108,101,114,105",
+                        "endOffsets": "159,261,376,482"
+                    },
+                    "to": {
+                        "startLines": "54,55,56,57",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "6388,6497,6599,6714",
+                        "endColumns": "108,101,114,105",
+                        "endOffsets": "6492,6594,6709,6815"
                     }
                 },
                 {
@@ -64,11 +81,11 @@
                         "endOffsets": "354,552,682,788,1008,1137,1286,1417,1647,1754,1955,2086,2322,2526,2622,2710,2813"
                     },
                     "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46",
+                        "startLines": "36,37,38,39,40,41,42,43,45,46,47,48,49,50,51,52,53",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2838,2948,3146,3280,3390,3610,3743,3896,4236,4466,4577,4778,4913,5149,5357,5457,5549",
+                        "startOffsets": "3570,3680,3878,4012,4122,4342,4475,4628,4968,5198,5309,5510,5645,5881,6089,6189,6281",
                         "endColumns": "109,197,133,109,219,132,152,134,229,110,200,134,235,207,99,91,106",
-                        "endOffsets": "2943,3141,3275,3385,3605,3738,3891,4026,4461,4572,4773,4908,5144,5352,5452,5544,5651"
+                        "endOffsets": "3675,3873,4007,4117,4337,4470,4623,4758,5193,5304,5505,5640,5876,6084,6184,6276,6383"
                     }
                 }
             ]

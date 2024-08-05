@@ -15,78 +15,104 @@
 15    <uses-permission android:name="android.permission.INTERNET" />
 15-->/Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml:6:5-66
 15-->/Users/marwanmagdy/MyStaff/Projects/next_match/next_match/android/app/src/debug/AndroidManifest.xml:6:22-64
-16    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-16-->[com.android.installreferrer:installreferrer:2.2] /Users/marwanmagdy/.gradle/caches/transforms-3/041583ee2eed571b58b1cdbd35a2bde7/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:9:5-110
-16-->[com.android.installreferrer:installreferrer:2.2] /Users/marwanmagdy/.gradle/caches/transforms-3/041583ee2eed571b58b1cdbd35a2bde7/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:9:22-107
-17
-18    <application
-19        android:name="android.app.Application"
-20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/e970a6f182591c783eb9a6736f54ad25/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
-21        android:debuggable="true"
-22        android:icon="@mipmap/ic_launcher"
-23        android:label="next_match" >
-24        <activity
-25            android:name="com.example.next_match.MainActivity"
-26            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-27            android:exported="true"
-28            android:hardwareAccelerated="true"
-29            android:launchMode="singleTop"
-30            android:theme="@style/LaunchTheme"
-31            android:windowSoftInputMode="adjustResize" >
-32
-33            <!--
-34                 Specifies an Android theme to apply to this Activity as soon as
-35                 the Android process has started. This theme is visible to the user
-36                 while the Flutter UI initializes. After that, this theme continues
-37                 to determine the Window background behind the Flutter UI.
-38            -->
-39            <meta-data
-40                android:name="io.flutter.embedding.android.NormalTheme"
-41                android:resource="@style/NormalTheme" />
-42
-43            <intent-filter>
-44                <action android:name="android.intent.action.MAIN" />
-45
-46                <category android:name="android.intent.category.LAUNCHER" />
-47            </intent-filter>
-48        </activity>
-49        <!--
-50             Don't delete the meta-data below.
-51             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-52        -->
-53        <meta-data
-54            android:name="flutterEmbedding"
-55            android:value="2" />
-56
-57        <uses-library
-57-->[androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-58            android:name="androidx.window.extensions"
-58-->[androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-59            android:required="false" />
-59-->[androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-60        <uses-library
-60-->[androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-61            android:name="androidx.window.sidecar"
-61-->[androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-62            android:required="false" />
-62-->[androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-63
-64        <activity
-64-->[com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:23:9-26:75
-65            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-65-->[com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:24:13-79
-66            android:exported="false"
-66-->[com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:25:13-37
-67            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-67-->[com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:26:13-72
-68
-69        <meta-data
-69-->[com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
-70            android:name="com.google.android.gms.version"
-70-->[com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
-71            android:value="@integer/google_play_services_version" />
-71-->[com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
-72    </application>
-73
-74</manifest>
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->[:camera_android] /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-65
+16-->[:camera_android] /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-62
+17    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+17-->[:camera_android] /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:5-71
+17-->[:camera_android] /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/camera_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:22-68
+18    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+18-->[com.android.installreferrer:installreferrer:2.2] /Users/marwanmagdy/.gradle/caches/transforms-3/041583ee2eed571b58b1cdbd35a2bde7/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:9:5-110
+18-->[com.android.installreferrer:installreferrer:2.2] /Users/marwanmagdy/.gradle/caches/transforms-3/041583ee2eed571b58b1cdbd35a2bde7/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:9:22-107
+19
+20    <permission
+20-->[androidx.core:core:1.10.1] /Users/marwanmagdy/.gradle/caches/transforms-3/691088abf813ded121e93767daa341ab/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+21        android:name="com.example.next_match.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+21-->[androidx.core:core:1.10.1] /Users/marwanmagdy/.gradle/caches/transforms-3/691088abf813ded121e93767daa341ab/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+22        android:protectionLevel="signature" />
+22-->[androidx.core:core:1.10.1] /Users/marwanmagdy/.gradle/caches/transforms-3/691088abf813ded121e93767daa341ab/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+23
+24    <uses-permission android:name="com.example.next_match.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+24-->[androidx.core:core:1.10.1] /Users/marwanmagdy/.gradle/caches/transforms-3/691088abf813ded121e93767daa341ab/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.10.1] /Users/marwanmagdy/.gradle/caches/transforms-3/691088abf813ded121e93767daa341ab/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+25
+26    <application
+27        android:name="android.app.Application"
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.10.1] /Users/marwanmagdy/.gradle/caches/transforms-3/691088abf813ded121e93767daa341ab/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_launcher"
+31        android:label="next_match" >
+32        <activity
+33            android:name="com.example.next_match.MainActivity"
+34            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+35            android:exported="true"
+36            android:hardwareAccelerated="true"
+37            android:launchMode="singleTop"
+38            android:theme="@style/LaunchTheme"
+39            android:windowSoftInputMode="adjustResize" >
+40
+41            <!--
+42                 Specifies an Android theme to apply to this Activity as soon as
+43                 the Android process has started. This theme is visible to the user
+44                 while the Flutter UI initializes. After that, this theme continues
+45                 to determine the Window background behind the Flutter UI.
+46            -->
+47            <meta-data
+48                android:name="io.flutter.embedding.android.NormalTheme"
+49                android:resource="@style/NormalTheme" />
+50
+51            <intent-filter>
+52                <action android:name="android.intent.action.MAIN" />
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+55            </intent-filter>
+56        </activity>
+57        <!--
+58             Don't delete the meta-data below.
+59             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+60        -->
+61        <meta-data
+62            android:name="flutterEmbedding"
+63            android:value="2" />
+64
+65        <activity
+65-->[:url_launcher_android] /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-11:74
+66            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+66-->[:url_launcher_android] /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-74
+67            android:exported="false"
+67-->[:url_launcher_android] /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-37
+68            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+68-->[:url_launcher_android] /Users/marwanmagdy/MyStaff/Projects/next_match/next_match/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-71
+69
+70        <uses-library
+70-->[androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+71            android:name="androidx.window.extensions"
+71-->[androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+72            android:required="false" />
+72-->[androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+73        <uses-library
+73-->[androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+74            android:name="androidx.window.sidecar"
+74-->[androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+75            android:required="false" />
+75-->[androidx.window:window:1.0.0-beta04] /Users/marwanmagdy/.gradle/caches/transforms-3/e37335abd47bd386bb81e051142e06e9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+76
+77        <activity
+77-->[com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:23:9-26:75
+78            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+78-->[com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:24:13-79
+79            android:exported="false"
+79-->[com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:25:13-37
+80            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+80-->[com.google.android.gms:play-services-base:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/0abd19dba79290611ab4a523e80c12a0/transformed/jetified-play-services-base-17.6.0/AndroidManifest.xml:26:13-72
+81
+82        <meta-data
+82-->[com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
+83            android:name="com.google.android.gms.version"
+83-->[com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
+84            android:value="@integer/google_play_services_version" />
+84-->[com.google.android.gms:play-services-basement:17.6.0] /Users/marwanmagdy/.gradle/caches/transforms-3/ace899248c81ea2bfc72c2ac3ee0b135/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
+85    </application>
+86
+87</manifest>

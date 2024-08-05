@@ -2,10 +2,46 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "_fe_analyzer_shared",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-64.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "analyzer",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/analyzer-6.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "archive",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/archive-3.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "args",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/args-2.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "async",
       "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/async-2.11.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "awesome_dropdown",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/awesome_dropdown-0.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "bloc",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/bloc-8.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "boolean_selector",
@@ -14,10 +50,130 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "build",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/build-2.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "build_config",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/build_config-1.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "build_daemon",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/build_daemon-4.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "build_resolvers",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/build_resolvers-2.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "build_runner",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/build_runner-2.4.9",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "build_runner_core",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/build_runner_core-7.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "built_collection",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/built_collection-5.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "built_value",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/built_value-8.9.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "cached_network_image",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/cached_network_image-3.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "cached_network_image_platform_interface",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/cached_network_image_platform_interface-4.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "cached_network_image_web",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/cached_network_image_web-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "camera",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/camera-0.10.5+9",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "camera_android",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/camera_android-0.10.9+2",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "camera_avfoundation",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/camera_avfoundation-0.9.13+10",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "camera_platform_interface",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/camera_platform_interface-2.8.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "camera_web",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/camera_web-0.3.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "carousel_slider",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/carousel_slider-4.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "characters",
       "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/characters-1.3.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "checked_yaml",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/checked_yaml-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "circular_buffer",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/circular_buffer-0.11.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.13"
+    },
+    {
+      "name": "cli_util",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/cli_util-0.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "clock",
@@ -26,10 +182,40 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "code_builder",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/code_builder-4.10.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "collection",
       "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/collection-1.18.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "color",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/color-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "convert",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/convert-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "cross_file",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/cross_file-0.3.3+8",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "crypto",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/crypto-3.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "cupertino_icons",
@@ -38,10 +224,88 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "dart_style",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/dart_style-2.3.6",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "dartx",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/dartx-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "dcli_core",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/dcli_core-3.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "dio",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/dio-5.5.0+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "dio_web_adapter",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/dio_web_adapter-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "dotted_border",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/dotted_border-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "dropdown_search",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/dropdown_search-5.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "easy_localization",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/easy_localization-3.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "easy_logger",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/easy_logger-0.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "external_path",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/external_path-1.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/fake_async-1.3.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "ffi",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/ffi-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "file",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/file-7.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "fixnum",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/fixnum-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "flutter",
@@ -50,8 +314,68 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "flutter_bloc",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/flutter_bloc-8.1.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_cache_manager",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/flutter_cache_manager-3.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_dotenv",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/flutter_dotenv-5.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_gen_core",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/flutter_gen_core-5.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_gen_runner",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/flutter_gen_runner-5.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/flutter_launcher_icons-0.13.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/flutter_lints-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "flutter_localizations",
+      "rootUri": "file:///Users/marwanmagdy/Flutterdev/flutter/packages/flutter_localizations",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "flutter_plugin_android_lifecycle",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/flutter_plugin_android_lifecycle-2.0.19",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "flutter_screenutil",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/flutter_screenutil-5.9.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_svg",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/flutter_svg-2.0.10+1",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
@@ -62,10 +386,136 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "flutter_web_plugins",
+      "rootUri": "file:///Users/marwanmagdy/Flutterdev/flutter/packages/flutter_web_plugins",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "fluttertoast",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/fluttertoast-8.2.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "frontend_server_client",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/frontend_server_client-4.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "get_it",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/get_it-7.6.7",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "glob",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/glob-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "go_router",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/go_router-14.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "google_fonts",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/google_fonts-4.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "graphs",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/graphs-2.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "hashcodes",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/hashcodes-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "http",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/http-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "http_multi_server",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/http_multi_server-3.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/http_parser-4.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "image",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/image-4.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
+      "name": "image_size_getter",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/image_size_getter-2.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "intl",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/intl-0.18.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "io",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/io-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/js-0.7.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "json_annotation",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/json_annotation-4.9.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "lint",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/lint-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/lints-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/logging-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "lottie",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/lottie-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
     },
     {
       "name": "matcher",
@@ -86,10 +536,226 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "mime",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/mime-1.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "nested",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "number_pagination",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/number_pagination-1.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "octo_image",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/octo_image-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "package_config",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/package_config-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/path-1.8.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "path_drawing",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/path_drawing-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_parsing",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/path_parsing-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_provider",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/path_provider-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "path_provider_android",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/path_provider_android-2.2.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "path_provider_foundation",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/path_provider_foundation-2.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "path_provider_linux",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/path_provider_linux-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "path_provider_platform_interface",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/path_provider_platform_interface-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "path_provider_windows",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/path_provider_windows-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "persistent_bottom_nav_bar_v2",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/persistent_bottom_nav_bar_v2-5.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "petitparser",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/petitparser-6.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "photo_view",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/photo_view-0.14.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "pin_code_fields",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/pin_code_fields-8.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "platform",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/platform-3.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "plugin_platform_interface",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.8",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "pool",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/pool-1.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "pretty_dio_logger",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/pretty_dio_logger-1.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "provider",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/provider-6.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "pub_semver",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/pub_semver-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "pubspec_parse",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/pubspec_parse-1.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "rxdart",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/rxdart-0.27.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "scope",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/scope-4.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "settings_yaml",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/settings_yaml-7.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "shared_preferences",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/shared_preferences-2.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "shared_preferences_android",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/shared_preferences_android-2.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "shared_preferences_foundation",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/shared_preferences_foundation-2.3.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "shared_preferences_linux",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/shared_preferences_linux-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "shared_preferences_platform_interface",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/shared_preferences_platform_interface-2.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "shared_preferences_web",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/shared_preferences_web-2.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "shared_preferences_windows",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/shared_preferences_windows-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "shelf",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/shelf-1.4.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_web_socket",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/shelf_web_socket-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "sky_engine",
@@ -98,10 +764,34 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "smooth_page_indicator",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/smooth_page_indicator-1.2.0+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "source_span",
       "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/source_span-1.10.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "sprintf",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/sprintf-7.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "sqflite",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/sqflite-2.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "sqflite_common",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/sqflite_common-2.5.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "stack_trace",
@@ -116,10 +806,22 @@
       "languageVersion": "2.19"
     },
     {
+      "name": "stream_transform",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/stream_transform-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "string_scanner",
       "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/string_scanner-1.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
+    },
+    {
+      "name": "synchronized",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/synchronized-3.1.0+1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "term_glyph",
@@ -134,10 +836,112 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "time",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/time-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "timing",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/timing-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "translations_code_gen",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/translations_code_gen-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "typed_data",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/typed_data-1.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "url_launcher",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/url_launcher-6.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "url_launcher_android",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "url_launcher_ios",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/url_launcher_ios-6.2.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "url_launcher_linux",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/url_launcher_linux-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "url_launcher_macos",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/url_launcher_macos-3.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "url_launcher_platform_interface",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/url_launcher_platform_interface-2.3.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
+      "name": "url_launcher_web",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/url_launcher_web-2.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "url_launcher_windows",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/url_launcher_windows-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "uuid",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/uuid-4.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "vector_graphics",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/vector_graphics-1.1.11+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "vector_graphics_codec",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/vector_graphics_codec-1.1.11+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "vector_graphics_compiler",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/vector_graphics_compiler-1.1.11+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.14"
+    },
+    {
+      "name": "watcher",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/watcher-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "web",
@@ -146,13 +950,37 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "web_socket_channel",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.15"
+    },
+    {
+      "name": "xdg_directories",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/xdg_directories-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "xml",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/xml-6.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "yaml",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/yaml-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "next_match",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-08-04T18:22:15.925625Z",
+  "generated": "2024-08-04T19:41:32.418425Z",
   "generator": "pub",
   "generatorVersion": "3.2.0"
 }

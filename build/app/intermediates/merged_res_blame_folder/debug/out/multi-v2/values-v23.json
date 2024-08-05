@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.next_match.app-mergeDebugResources-13:/values-v23/values-v23.xml",
+            "outputFile": "com.example.next_match.app-mergeDebugResources-15:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/Users/marwanmagdy/.gradle/caches/transforms-3/0694ac62ac72c2f9a514dadf0b04fcb6/transformed/appcompat-1.0.0/res/values-v23/values-v23.xml",
