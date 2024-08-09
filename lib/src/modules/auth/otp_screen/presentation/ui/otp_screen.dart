@@ -1,218 +1,174 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:next_match/src/modules/auth/otp_screen/presentation/controller/otp_screen_cubit.dart';
+import 'package:next_match/src/modules/auth/premiere_league_id_sscreen/presentation/ui/premiere_league_id_screen.dart';
+import 'package:next_match/src/modules/auth/reset_password/presentation/ui/reset_password_screen.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
 import 'package:next_match/src/core/utils/app_theme.dart';
-import 'package:next_match/src/core/utils/assets/assets.gen.dart';
 import 'package:next_match/src/core/utils/constants.dart';
-import 'package:next_match/src/modules/auth/login/presentation/ui/login_screen.dart';
-import 'package:next_match/src/modules/auth/reset_password/presentation/ui/reset_password_screen.dart';
 import 'package:next_match/widget/custom_button.dart';
+import 'package:next_match/src/core/utils/assets/translations/keys.dart';
 
 class OtpScreen extends StatelessWidget {
-  const OtpScreen({super.key});
+  final bool fromSignup;
+  const OtpScreen({super.key, required this.fromSignup});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        height: MediaQuery.sizeOf(context).height.h,
-        width: MediaQuery.sizeOf(context).width.w,
-        decoration: BoxDecoration(
-            // image: DecorationImage(
-            //   image: Assets.images.backgroundImage.provider(),
-            //   fit: BoxFit.fill,
-            // ),
-            ),
-        child: Column(
-          children: [
-            Flexible(
-              flex: 1,
-              child: Stack(
-                alignment: Alignment.topCenter,
-                children: [
-                  Container(
-                    height: 160.0.h,
-                    margin: EdgeInsets.symmetric(horizontal: 24.0.w),
-                    decoration: BoxDecoration(
-                      color: AppColors.lightGreen,
-                      borderRadius: BorderRadius.vertical(
-                        bottom: Radius.circular(20.r),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    width: MediaQuery.sizeOf(context).width.w,
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: AppColors.background,
+        body: BlocProvider(
+          create: (BuildContext context) => OtpScreenCubit(),
+          child: Builder(builder: (context) {
+            final cubit = context.watch<OtpScreenCubit>();
+            return Container(
+              padding: EdgeInsets.symmetric(horizontal: 16.0.w),
+              color: AppColors.background,
+              child: GestureDetector(
+                onTap: () {
+                  FocusScope.of(context).unfocus();
+                },
+                child: Form(
+                  child: SingleChildScrollView(
                     padding: EdgeInsets.only(bottom: 20.0.h),
-                    height: 140.0.h,
-                    decoration: BoxDecoration(
-                      color: AppColors.primary,
-                      borderRadius: BorderRadius.vertical(
-                        bottom: Radius.circular(40.r),
-                      ),
-                    ),
-                    child: Align(
-                      alignment: Alignment.bottomCenter,
-                      child: Text(
-                        'forget_password_screen.forget_password.tr()',
-                        style: AppTheme.textTheme.displayMedium!.copyWith(
-                          color: AppColors.white,
-                          fontSize: 16.0.sp,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Flexible(
-              fit: FlexFit.tight,
-              flex: 3,
-              child: Container(
-                height: MediaQuery.sizeOf(context).height.h,
-                margin:
-                    EdgeInsets.symmetric(horizontal: 24.0.w, vertical: 20.0.h),
-                padding: EdgeInsets.all(20.0.w),
-                decoration: BoxDecoration(
-                  color: AppColors.lightGreen.withOpacity(.15),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(20.r),
-                  ),
-                ),
-                child: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Text(
-                        'forget_password_screen.forget_password.tr()',
-                        style: AppTheme.textTheme.displaySmall!.copyWith(
-                          color: AppColors.white,
-                        ),
-                      ),
-                      Constatnts.height6,
-                      Text(
-                        'forget_password_screen.send_verification.tr()',
-                        style: AppTheme.textTheme.displaySmall!.copyWith(
-                          color: AppColors.white,
-                          fontWeight: FontWeight.w400,
-                          fontSize: 14.0.sp,
-                        ),
-                      ),
-                      Constatnts.height30,
-                      PinCodeTextField(
-                        // controller: controller,
-                        keyboardType: TextInputType.number,
-                        enablePinAutofill: true,
-                        autoFocus: true,
-                        length: 4,
-                        obscureText: false,
-                        animationType: AnimationType.slide,
-                        onSaved: (v) {},
-                        enableActiveFill: true,
-                        hintCharacter: '0',
-                        textStyle: AppTheme.textTheme.displayLarge!.copyWith(
-                          color: AppColors.white,
-                          fontSize: 26.0.sp,
-                        ),
-                        pinTheme: PinTheme(
-                          fieldHeight: 60.0.h,
-                          fieldWidth: MediaQuery.of(context).size.width.w / 7.5,
-                          selectedFillColor: AppColors.transparent,
-                          selectedColor: AppColors.white,
-                          borderRadius: BorderRadius.circular(8.0.r),
-                          borderWidth: 1,
-                          inactiveColor: AppColors.white,
-                          activeColor: AppColors.white,
-                          inactiveFillColor: AppColors.transparent,
-                          shape: PinCodeFieldShape.box,
-                          activeFillColor: AppColors.transparent,
-                          errorBorderColor: AppColors.red,
-                          disabledColor: AppColors.white,
-                        ),
-                        appContext: context,
-                        onChanged: (String value) {},
-                      ),
-                      Constatnts.height30,
-                      customButton(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const ResetPasswordScreen(),
-                            ),
-                          );
-                        },
-                        title: 'forget_password_screen.verify_email.tr()',
-                        titleStyle: AppTheme.textTheme.headlineMedium?.copyWith(
-                          color: AppColors.white,
-                          fontWeight: FontWeight.w400,
-                        ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8.0.r),
-                        ),
-                        backgroundColor: AppColors.primary,
-                        padding: const EdgeInsets.all(14.0),
-                      ),
-                      SizedBox(
-                        height: 42.h,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'forget_password_screen.recive_email.tr()',
-                            style: AppTheme.textTheme.headlineMedium!.copyWith(
-                              color: AppColors.white,
-                              fontWeight: FontWeight.w400,
-                              fontSize: 12.0.sp,
-                            ),
-                          ),
-                          Text(
-                            'forget_password_screen.resend.tr()',
-                            style: AppTheme.textTheme.headlineMedium!.copyWith(
-                              color: AppColors.white,
-                              fontWeight: FontWeight.w600,
-                              fontSize: 12.0.sp,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Constatnts.height16,
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushAndRemoveUntil(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const LoginScreen()),
-                              (route) => false);
-                        },
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Constatnts.height20,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            const Icon(
-                              Icons.arrow_back_rounded,
-                              color: AppColors.white,
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.pop(context);
+                              },
+                              child: const Icon(Icons.arrow_back),
                             ),
-                            Constatnts.width8,
+                            Constatnts.width16,
                             Text(
-                              'forget_password_screen.back_to_login.tr()',
+                              otp_screen.verify.tr(),
                               style:
                                   AppTheme.textTheme.headlineMedium!.copyWith(
-                                color: AppColors.white,
-                                fontWeight: FontWeight.w600,
-                                fontSize: 12.0.sp,
+                                fontWeight: FontWeight.w500,
                               ),
                             ),
                           ],
                         ),
-                      ),
-                    ],
+                        Constatnts.height52,
+                        Row(
+                          children: [
+                            Text(
+                              otp_screen.otp_screen_title.tr(),
+                              style: AppTheme.textTheme.displayLarge!.copyWith(
+                                fontWeight: FontWeight.w700,
+                                fontStyle: FontStyle.italic,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Constatnts.height14,
+                        Wrap(
+                          alignment: WrapAlignment.start,
+                          children: [
+                            Text(
+                              otp_screen.otp_screen_sub_title.tr(),
+                              style: AppTheme.textTheme.headlineSmall!.copyWith(
+                                  fontWeight: FontWeight.w500,
+                                  color: AppColors.paragraphs),
+                            ),
+                          ],
+                        ),
+                        Constatnts.height24,
+                        Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 10.0.w),
+                          child: PinCodeTextField(
+                            controller: cubit.controller,
+                            keyboardType: TextInputType.number,
+                            enablePinAutofill: true,
+                            autoFocus: true,
+                            length: 5,
+                            obscureText: false,
+                            animationType: AnimationType.slide,
+                            onSaved: (v) {},
+                            enableActiveFill: true,
+                            hintCharacter: '0',
+                            textStyle: AppTheme.textTheme.displayLarge,
+                            pinTheme: PinTheme(
+                              fieldHeight: 56.0.h,
+                              fieldWidth:
+                                  MediaQuery.of(context).size.width.w / 6.4,
+                              selectedFillColor: AppColors.white,
+                              inactiveFillColor: AppColors.white,
+                              activeFillColor: AppColors.white,
+                              selectedColor: AppColors.grey,
+                              inactiveColor: AppColors.grey,
+                              activeColor: AppColors.grey,
+                              errorBorderColor: AppColors.red,
+                              disabledColor: AppColors.white,
+                              borderRadius: BorderRadius.circular(8.0.r),
+                              borderWidth: 1,
+                              shape: PinCodeFieldShape.box,
+                            ),
+                            appContext: context,
+                            onChanged: (String value) {
+                              cubit.isButtonDisabled();
+                            },
+                          ),
+                        ),
+                        Constatnts.height40,
+                        Constatnts.height8,
+                        customButton(
+                          onTap: cubit.isDisabled
+                              ? null
+                              : () {
+                                  fromSignup
+                                      ? Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const PremiereLeagueIdScreen(),
+                                          ),
+                                        )
+                                      : Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const ResetPasswordScreen(),
+                                          ),
+                                        );
+                                },
+                          title: otp_screen.verify.tr(),
+                          titleStyle:
+                              AppTheme.textTheme.displayMedium?.copyWith(
+                            color: AppColors.white,
+                            fontSize: 16.0.sp,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8.0.r),
+                          ),
+                          boxShadow: [
+                            const BoxShadow(
+                              color: AppColors.shadow,
+                              blurRadius: 0.0,
+                              spreadRadius: 0.0,
+                              offset: Offset(0, 4),
+                            ),
+                          ],
+                          backgroundColor: AppColors.primary,
+                          disabledBackgroundColor: AppColors.lightPrimary,
+                          padding: const EdgeInsets.all(14.0),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
-            ),
-          ],
+            );
+          }),
         ),
       ),
     );
