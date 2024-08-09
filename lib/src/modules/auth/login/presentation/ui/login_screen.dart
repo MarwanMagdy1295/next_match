@@ -1,11 +1,16 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
 import 'package:next_match/src/core/utils/app_theme.dart';
-import 'package:next_match/src/core/utils/assets/assets.gen.dart';
+import 'package:next_match/src/core/utils/assets/translations/keys.dart';
 import 'package:next_match/src/core/utils/constants.dart';
 import 'package:next_match/src/modules/auth/forget_password/presentation/ui/forget_password.dart';
+import 'package:next_match/src/modules/auth/login/presentation/controller/cubit/login_screen_cubit.dart';
+import 'package:next_match/src/modules/auth/signup/presentation/ui/signup_screen.dart';
 import 'package:next_match/widget/custom_button.dart';
 import 'package:next_match/widget/custom_text_form_field.dart';
 
@@ -14,210 +19,290 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      floatingActionButton: Container(
-        margin: EdgeInsets.only(
-          bottom: 52.0.h,
-          left: 44.0.w,
-          right: 44.0.w,
-        ),
-        width: double.maxFinite,
-        child: customButton(
-          onTap: () {
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(
-            //     builder: (context) => const MainScreen(),
-            //   ),
-            // );
-          },
-          title: 'login_screen.login.tr()',
-          titleStyle: AppTheme.textTheme.displayMedium?.copyWith(
-            color: AppColors.white,
-            fontSize: 16.0.sp,
-          ),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8.0.r),
-          ),
-          backgroundColor: AppColors.primary,
-          padding: const EdgeInsets.all(14.0),
-        ),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      body: Container(
-        height: MediaQuery.sizeOf(context).height.h,
-        width: MediaQuery.sizeOf(context).width.w,
-        decoration: BoxDecoration(
-            // image: DecorationImage(
-            // image: Assets.images.backgroundImage.provider(),
-            // fit: BoxFit.fill,
-            // ),
-            ),
-        child: Column(
-          children: [
-            Flexible(
-              flex: 1,
-              child: Stack(
-                alignment: Alignment.topCenter,
-                children: [
-                  Container(
-                    height: 160.0.h,
-                    margin: EdgeInsets.symmetric(horizontal: 24.0.w),
-                    decoration: BoxDecoration(
-                      color: AppColors.lightGreen,
-                      borderRadius: BorderRadius.vertical(
-                        bottom: Radius.circular(20.r),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    width: MediaQuery.sizeOf(context).width.w,
-                    padding: EdgeInsets.only(bottom: 20.0.h),
-                    height: 140.0.h,
-                    decoration: BoxDecoration(
-                      color: AppColors.primary,
-                      borderRadius: BorderRadius.vertical(
-                        bottom: Radius.circular(40.r),
-                      ),
-                    ),
-                    child: Align(
-                      alignment: Alignment.bottomCenter,
-                      child: Text(
-                        'login_screen.login.tr()',
-                        style: AppTheme.textTheme.displayMedium!.copyWith(
-                          color: AppColors.white,
-                          fontSize: 16.0.sp,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Flexible(
-              fit: FlexFit.tight,
-              flex: 3,
-              child: Container(
-                height: MediaQuery.sizeOf(context).height.h,
-                margin:
-                    EdgeInsets.symmetric(horizontal: 24.0.w, vertical: 20.0.h),
-                padding: EdgeInsets.all(20.0.w),
-                decoration: BoxDecoration(
-                  color: AppColors.lightGreen.withOpacity(.15),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(20.r),
-                  ),
-                ),
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: AppColors.background,
+        body: BlocProvider(
+          create: (BuildContext context) => LoginScreenCubit(),
+          child: Builder(builder: (context) {
+            final cubit = context.watch<LoginScreenCubit>();
+            return Container(
+              padding: EdgeInsets.symmetric(horizontal: 16.0.w),
+              color: AppColors.background,
+              child: GestureDetector(
+                onTap: () {
+                  FocusScope.of(context).unfocus();
+                },
                 child: Form(
                   child: SingleChildScrollView(
-                    padding: EdgeInsets.only(bottom: 80.0.h),
+                    padding: EdgeInsets.only(bottom: 20.0.h),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Text(
-                          'login_screen.welcome_back.tr()',
-                          style: AppTheme.textTheme.displayMedium!.copyWith(
-                            color: AppColors.white,
+                        Constatnts.height20,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                              signin_screen.signin.tr(),
+                              style:
+                                  AppTheme.textTheme.headlineMedium!.copyWith(
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Constatnts.height52,
+                        Row(
+                          children: [
+                            Text(
+                              signin_screen.signin_title.tr(),
+                              style: AppTheme.textTheme.displayLarge!.copyWith(
+                                fontWeight: FontWeight.w700,
+                                fontStyle: FontStyle.italic,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Constatnts.height14,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text(
+                              signin_screen.signin_sub_title.tr(),
+                              style: AppTheme.textTheme.headlineSmall!.copyWith(
+                                  fontWeight: FontWeight.w500,
+                                  color: AppColors.paragraphs),
+                            ),
+                          ],
+                        ),
+                        Constatnts.height40,
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border.all(color: AppColors.darkGrey),
+                            borderRadius: BorderRadius.circular(8.0.r),
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Container(
+                                width: 92.0.w,
+                                height: 36.0.h,
+                                margin: EdgeInsetsDirectional.only(
+                                    top: 8.0.h,
+                                    start: 8.0.h,
+                                    end: 16.0.h,
+                                    bottom: 8.0.h),
+                                decoration: BoxDecoration(
+                                  color: AppColors.appBlack,
+                                  borderRadius: BorderRadius.circular(4.0.r),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    signin_screen.signin.tr(),
+                                    textAlign: TextAlign.center,
+                                    style:
+                                        AppTheme.textTheme.titleLarge?.copyWith(
+                                      color: AppColors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.pushAndRemoveUntil(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (BuildContext context) =>
+                                          const SignUpScreen(),
+                                    ),
+                                    (_) => false,
+                                  );
+                                },
+                                child: Container(
+                                  width: 92.0.w,
+                                  height: 36.0.h,
+                                  margin: EdgeInsetsDirectional.only(
+                                      top: 8.0.h,
+                                      start: 8.0.h,
+                                      end: 16.0.h,
+                                      bottom: 8.0.h),
+                                  decoration: BoxDecoration(
+                                    color: AppColors.transparent,
+                                    borderRadius: BorderRadius.circular(4.0.r),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      signup_screen.signup.tr(),
+                                      textAlign: TextAlign.center,
+                                      style: AppTheme.textTheme.titleLarge
+                                          ?.copyWith(
+                                        color: AppColors.appBlack,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                        Constatnts.height10,
-                        Text(
-                          'login_screen.please_enter_your_data.tr()',
-                          style: AppTheme.textTheme.displaySmall!.copyWith(
-                            color: AppColors.white,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14.0.sp,
-                          ),
-                        ),
-                        Constatnts.height30,
+                        Constatnts.height24,
                         customTextFeild(
-                          title: 'login_screen.user_name.tr()',
+                          title: signin_screen.email.tr(),
                           isTitileAviable: true,
-                          hint: 'login_screen.user_name.tr()',
-                          hintStyle:
-                              AppTheme.textTheme.headlineMedium?.copyWith(
-                            color: AppColors.white,
+                          hint: signin_screen.email.tr(),
+                          hintStyle: AppTheme.textTheme.headlineSmall?.copyWith(
+                            color: AppColors.paragraphs,
+                            fontWeight: FontWeight.w500,
+                            fontStyle: FontStyle.italic,
                           ),
-                          titleStyle:
-                              AppTheme.textTheme.headlineMedium?.copyWith(
-                            color: AppColors.white,
-                            fontSize: 12.0.sp,
-                          ),
+                          titleStyle: AppTheme.textTheme.titleLarge,
                           contentStyle:
-                              AppTheme.textTheme.displaySmall?.copyWith(
-                            fontWeight: FontWeight.w400,
-                            color: AppColors.white,
-                            fontSize: 14.0.sp,
+                              AppTheme.textTheme.headlineSmall?.copyWith(
+                            color: AppColors.paragraphs,
+                            fontWeight: FontWeight.w500,
+                            fontStyle: FontStyle.italic,
                           ),
-                          keyboardType: TextInputType.text,
+                          keyboardType: TextInputType.emailAddress,
+                          textInputAction: TextInputAction.next,
                           padding: const EdgeInsets.symmetric(
-                              vertical: 10.0, horizontal: 14.0),
+                              vertical: 12.0, horizontal: 16.0),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(8.0),
                             borderSide: const BorderSide(
-                              color: AppColors.white,
+                              color: AppColors.grey,
                             ),
                           ),
+                          isFill: true,
+                          color: AppColors.white,
                         ),
-                        Constatnts.height16,
+                        Constatnts.height24,
                         customTextFeild(
-                          title: 'login_screen.password.tr()',
+                          title: signin_screen.password.tr(),
                           isTitileAviable: true,
-                          obscureText: true,
-                          hint: 'login_screen.password.tr()',
-                          hintStyle:
-                              AppTheme.textTheme.headlineMedium?.copyWith(
+                          isForgetAviable: true,
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const ForgetPassword(),
+                              ),
+                            );
+                          },
+                          hint: '********',
+                          obscureText: cubit.isHide,
+                          hintStyle: AppTheme.textTheme.headlineSmall?.copyWith(
+                            color: AppColors.paragraphs,
+                            fontWeight: FontWeight.w500,
+                            fontStyle: FontStyle.italic,
+                          ),
+                          titleStyle: AppTheme.textTheme.titleLarge,
+                          contentStyle:
+                              AppTheme.textTheme.headlineSmall?.copyWith(
+                            color: AppColors.paragraphs,
+                            fontWeight: FontWeight.w500,
+                            fontStyle: FontStyle.italic,
+                          ),
+                          keyboardType: TextInputType.text,
+                          textInputAction: TextInputAction.done,
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 12.0, horizontal: 16.0),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8.0),
+                            borderSide: const BorderSide(
+                              color: AppColors.grey,
+                            ),
+                          ),
+                          isFill: true,
+                          color: AppColors.white,
+                          suffixIcon: GestureDetector(
+                            onTap: () {
+                              cubit.hidePassword();
+                            },
+                            child: cubit.isHide
+                                ? const Icon(
+                                    Icons.visibility_off_outlined,
+                                    color: AppColors.appBlack,
+                                  )
+                                : Icon(
+                                    Icons.visibility_outlined,
+                                    color: AppColors.appBlack,
+                                  ),
+                          ),
+                        ),
+                        Constatnts.height40,
+                        Constatnts.height8,
+                        customButton(
+                          onTap: () {
+                            // Navigator.push(
+                            //   context,
+                            //   MaterialPageRoute(
+                            //     builder: (context) => const MainScreen(),
+                            //   ),
+                            // );
+                          },
+                          title: signup_screen.signin.tr(),
+                          titleStyle:
+                              AppTheme.textTheme.displayMedium?.copyWith(
                             color: AppColors.white,
                             fontSize: 16.0.sp,
                           ),
-                          titleStyle:
-                              AppTheme.textTheme.headlineMedium?.copyWith(
-                            color: AppColors.white,
-                            fontSize: 14.0.sp,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8.0.r),
                           ),
-                          contentStyle:
-                              AppTheme.textTheme.displaySmall?.copyWith(
-                            fontWeight: FontWeight.w400,
-                            color: AppColors.white,
-                          ),
-                          keyboardType: TextInputType.text,
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 10.0, horizontal: 14.0),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(8.0),
-                            borderSide: const BorderSide(
-                              color: AppColors.white,
+                          boxShadow: [
+                            const BoxShadow(
+                              color: AppColors.shadow,
+                              blurRadius: 0.0,
+                              spreadRadius: 0.0,
+                              offset: Offset(0, 4),
                             ),
-                          ),
+                          ],
+                          backgroundColor: AppColors.primary,
+                          padding: const EdgeInsets.all(14.0),
                         ),
-                        Constatnts.height10,
-                        Align(
-                          alignment: Alignment.topRight,
-                          child: GestureDetector(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const ForgetPassword(),
-                                ),
-                              );
-                            },
-                            child: Text(
-                              ' login_screen.forget_password.tr()',
-                              style: AppTheme.textTheme.titleLarge?.copyWith(
-                                color: AppColors.white,
-                                fontWeight: FontWeight.w400,
-                              ),
-                            ),
-                          ),
-                        ),
+                        // Constatnts.height40,
+                        // Constatnts.height8,
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.center,
+                        //   children: [
+                        //     GestureDetector(
+                        //       onTap: () {},
+                        //       child: Container(
+                        //         padding: EdgeInsets.symmetric(
+                        //             horizontal: 18.0.w, vertical: 14.0.h),
+                        //         decoration: BoxDecoration(
+                        //           color: AppColors.white,
+                        //           borderRadius: BorderRadius.circular(4.0.r),
+                        //           border: Border.all(color: AppColors.grey),
+                        //         ),
+                        //         child: const FaIcon(FontAwesomeIcons.apple),
+                        //       ),
+                        //     ),
+                        //     Constatnts.width20,
+                        //     Constatnts.width4,
+                        //     GestureDetector(
+                        //       onTap: () {},
+                        //       child: Container(
+                        //         padding: EdgeInsets.symmetric(
+                        //             horizontal: 16.0.w, vertical: 14.0.h),
+                        //         decoration: BoxDecoration(
+                        //           color: AppColors.white,
+                        //           borderRadius: BorderRadius.circular(4.0.r),
+                        //           border: Border.all(color: AppColors.grey),
+                        //         ),
+                        //         child: const FaIcon(FontAwesomeIcons.google),
+                        //       ),
+                        //     ),
+                        //   ],
+                        // ),
                       ],
                     ),
                   ),
                 ),
               ),
-            ),
-          ],
+            );
+          }),
         ),
       ),
     );
