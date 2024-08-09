@@ -1,6 +1,9 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
+import 'package:next_match/src/core/utils/app_theme.dart';
 import 'package:next_match/src/core/utils/constants.dart';
+import 'package:next_match/src/core/utils/assets/translations/keys.dart';
 
 Column customTextFeild({
   controller,
@@ -22,14 +25,34 @@ Column customTextFeild({
   isFill = false,
   titleStyle,
   contentStyle,
+  textInputAction,
+  onTap,
+  isForgetAviable = false,
+  suffixIcon,
 }) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       isTitileAviable
-          ? Text(
-              title,
-              style: titleStyle,
+          ? Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  title,
+                  style: titleStyle,
+                ),
+                isForgetAviable
+                    ? GestureDetector(
+                        onTap: onTap,
+                        child: Text(
+                          signin_screen.forgot_password.tr(),
+                          style: AppTheme.textTheme.titleLarge?.copyWith(
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      )
+                    : Container(),
+              ],
             )
           : const SizedBox(),
       Constatnts.height6,
@@ -43,6 +66,7 @@ Column customTextFeild({
         maxLines: lines,
         keyboardType: keyboardType,
         style: contentStyle,
+        textInputAction: textInputAction,
         decoration: InputDecoration(
           enabledBorder: border,
           disabledBorder: border,
@@ -54,6 +78,7 @@ Column customTextFeild({
           isDense: true,
           hintText: hint,
           hintStyle: hintStyle,
+          suffixIcon: suffixIcon,
         ),
       ),
     ],
