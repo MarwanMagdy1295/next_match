@@ -37,7 +37,7 @@ class AppLayout extends StatelessWidget {
             fontFamily: 'Cairo',
             sliderTheme: const SliderThemeData(
               showValueIndicator: ShowValueIndicator.always,
-              thumbColor: AppColors.lightGreen,
+              thumbColor: AppColors.secondry,
             ),
             primaryColor: AppColors.white,
             radioTheme: RadioThemeData(

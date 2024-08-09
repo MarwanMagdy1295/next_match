@@ -3,153 +3,162 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
 import 'package:next_match/src/core/utils/app_theme.dart';
-import 'package:next_match/src/core/utils/assets/assets.gen.dart';
 import 'package:next_match/src/core/utils/constants.dart';
 import 'package:next_match/src/modules/auth/otp_screen/presentation/ui/otp_screen.dart';
-import 'package:next_match/widget/custom_button.dart';
 import 'package:next_match/widget/custom_text_form_field.dart';
+import 'package:next_match/src/core/utils/assets/translations/keys.dart';
+import 'package:next_match/widget/custom_button.dart';
 
 class ForgetPassword extends StatelessWidget {
   const ForgetPassword({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        height: MediaQuery.sizeOf(context).height.h,
-        width: MediaQuery.sizeOf(context).width.w,
-        decoration: BoxDecoration(
-            // image: DecorationImage(
-            //   image: Assets.images.backgroundImage.provider(),
-            //   fit: BoxFit.fill,
-            // ),
-            ),
-        child: Column(
-          children: [
-            Flexible(
-              flex: 1,
-              child: Stack(
-                alignment: Alignment.topCenter,
-                children: [
-                  Container(
-                    height: 160.0.h,
-                    margin: EdgeInsets.symmetric(horizontal: 24.0.w),
-                    decoration: BoxDecoration(
-                      color: AppColors.lightGreen,
-                      borderRadius: BorderRadius.vertical(
-                        bottom: Radius.circular(20.r),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    width: MediaQuery.sizeOf(context).width.w,
-                    padding: EdgeInsets.only(bottom: 20.0.h),
-                    height: 140.0.h,
-                    decoration: BoxDecoration(
-                      color: AppColors.primary,
-                      borderRadius: BorderRadius.vertical(
-                        bottom: Radius.circular(40.r),
-                      ),
-                    ),
-                    child: Align(
-                      alignment: Alignment.bottomCenter,
-                      child: Text(
-                        'forget_password_screen.forget_password.tr()',
-                        style: AppTheme.textTheme.displayMedium!.copyWith(
-                          color: AppColors.white,
-                          fontSize: 16.0.sp,
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: AppColors.background,
+        body: Container(
+          padding: EdgeInsets.symmetric(horizontal: 16.0.w),
+          color: AppColors.background,
+          child: GestureDetector(
+            onTap: () {
+              FocusScope.of(context).unfocus();
+            },
+            child: Form(
+              child: SingleChildScrollView(
+                padding: EdgeInsets.only(bottom: 20.0.h),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Constatnts.height20,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
+                          child: const Icon(Icons.arrow_back),
                         ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Flexible(
-              fit: FlexFit.tight,
-              flex: 3,
-              child: Container(
-                height: MediaQuery.sizeOf(context).height.h,
-                margin:
-                    EdgeInsets.symmetric(horizontal: 24.0.w, vertical: 20.0.h),
-                padding: EdgeInsets.all(20.0.w),
-                decoration: BoxDecoration(
-                  color: AppColors.lightGreen.withOpacity(.15),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(20.r),
-                  ),
-                ),
-                child: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Text(
-                        'forget_password_screen.forget_password.tr()',
-                        style: AppTheme.textTheme.displaySmall!.copyWith(
-                          color: AppColors.white,
-                        ),
-                      ),
-                      Constatnts.height6,
-                      Text(
-                        'forget_password_screen.forget_password_sub_title.tr()',
-                        style: AppTheme.textTheme.displaySmall!.copyWith(
-                          color: AppColors.white,
-                          fontWeight: FontWeight.w400,
-                          fontSize: 14.0.sp,
-                        ),
-                      ),
-                      Constatnts.height30,
-                      customTextFeild(
-                        title: 'forget_password_screen.User_name_email.tr()',
-                        isTitileAviable: true,
-                        hint: 'example@company.com',
-                        hintStyle: AppTheme.textTheme.headlineMedium
-                            ?.copyWith(color: AppColors.white),
-                        titleStyle: AppTheme.textTheme.headlineMedium?.copyWith(
-                          color: AppColors.white,
-                          fontSize: 14.0.sp,
-                        ),
-                        contentStyle: AppTheme.textTheme.displaySmall?.copyWith(
-                          fontWeight: FontWeight.w400,
-                          color: AppColors.white,
-                        ),
-                        keyboardType: TextInputType.text,
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 10.0, horizontal: 14.0),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(8.0),
-                          borderSide: const BorderSide(
-                            color: AppColors.white,
+                        Constatnts.width16,
+                        Text(
+                          forget_password_screen.forget_password.tr(),
+                          style: AppTheme.textTheme.headlineMedium!.copyWith(
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
+                      ],
+                    ),
+                    Constatnts.height52,
+                    Row(
+                      children: [
+                        Text(
+                          forget_password_screen.forget_password_title.tr(),
+                          style: AppTheme.textTheme.displayLarge!.copyWith(
+                            fontWeight: FontWeight.w700,
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Constatnts.height14,
+                    Wrap(
+                      alignment: WrapAlignment.start,
+                      children: [
+                        Text(
+                          forget_password_screen.forget_password_sub_title.tr(),
+                          style: AppTheme.textTheme.headlineSmall!.copyWith(
+                              fontWeight: FontWeight.w500,
+                              color: AppColors.paragraphs),
+                        ),
+                      ],
+                    ),
+                    Constatnts.height60,
+                    Constatnts.height20,
+                    customTextFeild(
+                      title: forget_password_screen.email.tr(),
+                      isTitileAviable: true,
+                      hint: forget_password_screen.email.tr(),
+                      hintStyle: AppTheme.textTheme.headlineSmall?.copyWith(
+                        color: AppColors.paragraphs,
+                        fontWeight: FontWeight.w500,
+                        fontStyle: FontStyle.italic,
                       ),
-                      Constatnts.height30,
-                      customButton(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const OtpScreen(),
+                      titleStyle: AppTheme.textTheme.titleLarge,
+                      contentStyle: AppTheme.textTheme.headlineSmall?.copyWith(
+                        color: AppColors.paragraphs,
+                        fontWeight: FontWeight.w500,
+                        fontStyle: FontStyle.italic,
+                      ),
+                      keyboardType: TextInputType.emailAddress,
+                      textInputAction: TextInputAction.done,
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 12.0, horizontal: 16.0),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                        borderSide: const BorderSide(
+                          color: AppColors.grey,
+                        ),
+                      ),
+                      isFill: true,
+                      color: AppColors.white,
+                    ),
+                    Constatnts.height40,
+                    Constatnts.height8,
+                    customButton(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const OtpScreen(
+                              fromSignup: false,
                             ),
-                          );
-                        },
-                        title: 'forget_password_screen.send_instructions.tr()',
-                        titleStyle: AppTheme.textTheme.headlineMedium?.copyWith(
-                          color: AppColors.white,
-                          fontWeight: FontWeight.w400,
-                        ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8.0.r),
-                        ),
-                        backgroundColor: AppColors.primary,
-                        padding: const EdgeInsets.all(14.0),
+                          ),
+                        );
+                      },
+                      title: forget_password_screen.send_email.tr(),
+                      titleStyle: AppTheme.textTheme.displayMedium?.copyWith(
+                        color: AppColors.white,
+                        fontSize: 16.0.sp,
                       ),
-                    ],
-                  ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0.r),
+                      ),
+                      boxShadow: [
+                        const BoxShadow(
+                          color: AppColors.shadow,
+                          blurRadius: 0.0,
+                          spreadRadius: 0.0,
+                          offset: Offset(0, 4),
+                        ),
+                      ],
+                      backgroundColor: AppColors.primary,
+                      padding: const EdgeInsets.all(14.0),
+                    ),
+                    Constatnts.height24,
+                    Constatnts.height2,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          forget_password_screen.recalled_your_password.tr(),
+                          style: AppTheme.textTheme.titleLarge!.copyWith(
+                              fontWeight: FontWeight.w500,
+                              color: AppColors.paragraphs),
+                        ),
+                        Text(
+                          ' ${forget_password_screen.signin.tr()}',
+                          style: AppTheme.textTheme.titleLarge!.copyWith(
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
             ),
-          ],
+          ),
         ),
       ),
     );
