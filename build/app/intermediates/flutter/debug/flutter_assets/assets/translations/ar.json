@@ -32,5 +32,13 @@
     "verify": "Verify",
     "otp_screen_title": "WE SENT YOU AN EMAIL",
     "otp_screen_sub_title": "Check the code in your email and type it below."
+  },
+  "reset_password_screen": {
+    "reset_password": "Reset Password",
+    "reset_password_screen_title": "REST YOUR PASSWORD",
+    "reset_password_screen_sub_title": "Type your new password.",
+    "new_password": "New Password",
+    "Repeat_password": "Repeat Password",
+    "change_password": "Change Password"
   }
 }

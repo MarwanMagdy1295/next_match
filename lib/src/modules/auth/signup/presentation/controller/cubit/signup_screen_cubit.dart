@@ -15,14 +15,12 @@ class SignupScreenCubit extends BaseCubit<SignupScreenState> {
   hidePassword() {
     emit(SignupScreenHidePasswordState());
     isHide = !isHide;
-    print(isHide);
     emit(SignupScreenHidePasswordState());
   }
 
   hideReapetPassword() {
     emit(SignupScreenHidePasswordState());
     isHideReapetPassword = !isHideReapetPassword;
-    print(isHideReapetPassword);
     emit(SignupScreenHidePasswordState());
   }
 

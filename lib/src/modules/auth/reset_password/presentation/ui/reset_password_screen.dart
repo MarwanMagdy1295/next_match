@@ -11,7 +11,6 @@ import 'package:next_match/src/modules/auth/login/presentation/ui/login_screen.d
 import 'package:next_match/src/modules/auth/reset_password/presentation/controller/cubit/reset_password_screen_cubit.dart';
 import 'package:next_match/widget/custom_text_form_field.dart';
 import 'package:next_match/src/core/utils/assets/translations/keys.dart';
-import 'package:next_match/src/modules/auth/forget_password/presentation/ui/forget_password.dart';
 import 'package:next_match/widget/custom_button.dart';
 
 class ResetPasswordScreen extends StatelessWidget {

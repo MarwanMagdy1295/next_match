@@ -13,7 +13,6 @@ class LoginScreenCubit extends BaseCubit<LoginScreenState> {
   hidePassword() {
     emit(LoginScreenHidePasswordState());
     isHide = !isHide;
-    print(isHide);
     emit(LoginScreenHidePasswordState());
   }
 
