@@ -49,3 +49,13 @@ class reset_password_screen {
   static const String change_password = "reset_password_screen.change_password";
 }
 
+class premiere_league_id_screen {
+  static const String premiere_league_id = "premiere_league_id_screen.premiere_league_id";
+  static const String premiere_league_id_screen_title = "premiere_league_id_screen.premiere_league_id_screen_title";
+  static const String premiere_league_id_screen_sub_title = "premiere_league_id_screen.premiere_league_id_screen_sub_title";
+  static const String FPL_ID = "premiere_league_id_screen.FPL_ID";
+  static const String Paste_or_input = "premiere_league_id_screen.Paste_or_input";
+  static const String my_id = "premiere_league_id_screen.my_id";
+  static const String add_later = "premiere_league_id_screen.add_later";
+}
+

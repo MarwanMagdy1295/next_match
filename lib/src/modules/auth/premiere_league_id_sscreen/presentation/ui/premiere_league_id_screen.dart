@@ -42,7 +42,7 @@ class PremiereLeagueIdScreen extends StatelessWidget {
                         ),
                         Constatnts.width16,
                         Text(
-                          forget_password_screen.forget_password.tr(),
+                          premiere_league_id_screen.premiere_league_id.tr(),
                           style: AppTheme.textTheme.headlineMedium!.copyWith(
                             fontWeight: FontWeight.w500,
                           ),
@@ -50,10 +50,12 @@ class PremiereLeagueIdScreen extends StatelessWidget {
                       ],
                     ),
                     Constatnts.height52,
-                    Row(
+                    Wrap(
                       children: [
                         Text(
-                          forget_password_screen.forget_password_title.tr(),
+                          premiere_league_id_screen
+                              .premiere_league_id_screen_title
+                              .tr(),
                           style: AppTheme.textTheme.displayLarge!.copyWith(
                             fontWeight: FontWeight.w700,
                             fontStyle: FontStyle.italic,
@@ -66,7 +68,9 @@ class PremiereLeagueIdScreen extends StatelessWidget {
                       alignment: WrapAlignment.start,
                       children: [
                         Text(
-                          forget_password_screen.forget_password_sub_title.tr(),
+                          premiere_league_id_screen
+                              .premiere_league_id_screen_sub_title
+                              .tr(),
                           style: AppTheme.textTheme.headlineSmall!.copyWith(
                               fontWeight: FontWeight.w500,
                               color: AppColors.paragraphs),
@@ -74,11 +78,10 @@ class PremiereLeagueIdScreen extends StatelessWidget {
                       ],
                     ),
                     Constatnts.height60,
-                    Constatnts.height20,
                     customTextFeild(
-                      title: forget_password_screen.email.tr(),
+                      title: premiere_league_id_screen.FPL_ID.tr(),
                       isTitileAviable: true,
-                      hint: forget_password_screen.email.tr(),
+                      hint: premiere_league_id_screen.Paste_or_input.tr(),
                       hintStyle: AppTheme.textTheme.headlineSmall?.copyWith(
                         color: AppColors.paragraphs,
                         fontWeight: FontWeight.w500,
@@ -90,7 +93,7 @@ class PremiereLeagueIdScreen extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                         fontStyle: FontStyle.italic,
                       ),
-                      keyboardType: TextInputType.emailAddress,
+                      keyboardType: TextInputType.text,
                       textInputAction: TextInputAction.done,
                       padding: const EdgeInsets.symmetric(
                           vertical: 12.0, horizontal: 16.0),
@@ -107,16 +110,16 @@ class PremiereLeagueIdScreen extends StatelessWidget {
                     Constatnts.height8,
                     customButton(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const OtpScreen(
-                              fromSignup: false,
-                            ),
-                          ),
-                        );
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //     builder: (context) => const OtpScreen(
+                        //       fromSignup: false,
+                        //     ),
+                        //   ),
+                        // );
                       },
-                      title: forget_password_screen.send_email.tr(),
+                      title: premiere_league_id_screen.my_id.tr(),
                       titleStyle: AppTheme.textTheme.displayMedium?.copyWith(
                         color: AppColors.white,
                         fontSize: 16.0.sp,
@@ -135,24 +138,30 @@ class PremiereLeagueIdScreen extends StatelessWidget {
                       backgroundColor: AppColors.primary,
                       padding: const EdgeInsets.all(14.0),
                     ),
-                    Constatnts.height24,
-                    Constatnts.height2,
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          forget_password_screen.recalled_your_password.tr(),
-                          style: AppTheme.textTheme.titleLarge!.copyWith(
-                              fontWeight: FontWeight.w500,
-                              color: AppColors.paragraphs),
-                        ),
-                        Text(
-                          ' ${forget_password_screen.signin.tr()}',
-                          style: AppTheme.textTheme.titleLarge!.copyWith(
-                            fontWeight: FontWeight.w500,
+                    Constatnts.height16,
+                    customButton(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const OtpScreen(
+                              fromSignup: false,
+                            ),
                           ),
-                        ),
-                      ],
+                        );
+                      },
+                      title: premiere_league_id_screen.add_later.tr(),
+                      titleStyle: AppTheme.textTheme.displayMedium?.copyWith(
+                        color: AppColors.primary,
+                        fontSize: 16.0.sp,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0.r),
+                        side:
+                            BorderSide(color: AppColors.primary, width: 2.0.h),
+                      ),
+                      backgroundColor: AppColors.white,
+                      padding: const EdgeInsets.all(14.0),
                     ),
                   ],
                 ),
