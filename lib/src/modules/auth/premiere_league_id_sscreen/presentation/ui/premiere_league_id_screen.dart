@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
 import 'package:next_match/src/core/utils/app_theme.dart';
 import 'package:next_match/src/core/utils/constants.dart';
+import 'package:next_match/src/modules/auth/login/presentation/ui/login_screen.dart';
 import 'package:next_match/src/modules/auth/otp_screen/presentation/ui/otp_screen.dart';
 import 'package:next_match/widget/custom_text_form_field.dart';
 import 'package:next_match/src/core/utils/assets/translations/keys.dart';
@@ -110,14 +111,12 @@ class PremiereLeagueIdScreen extends StatelessWidget {
                     Constatnts.height8,
                     customButton(
                       onTap: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //     builder: (context) => const OtpScreen(
-                        //       fromSignup: false,
-                        //     ),
-                        //   ),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const LoginScreen(),
+                          ),
+                        );
                       },
                       title: premiere_league_id_screen.my_id.tr(),
                       titleStyle: AppTheme.textTheme.displayMedium?.copyWith(
