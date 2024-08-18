@@ -11,6 +11,7 @@ import 'package:next_match/src/core/utils/constants.dart';
 import 'package:next_match/src/modules/auth/forget_password/presentation/ui/forget_password.dart';
 import 'package:next_match/src/modules/auth/login/presentation/controller/cubit/login_screen_cubit.dart';
 import 'package:next_match/src/modules/auth/signup/presentation/ui/signup_screen.dart';
+import 'package:next_match/src/modules/main_screen/presentation/ui/main_screen.dart';
 import 'package:next_match/widget/custom_button.dart';
 import 'package:next_match/widget/custom_text_form_field.dart';
 
@@ -72,14 +73,14 @@ class LoginScreen extends StatelessWidget {
                               signin_screen.signin_sub_title.tr(),
                               style: AppTheme.textTheme.headlineSmall!.copyWith(
                                   fontWeight: FontWeight.w500,
-                                  color: AppColors.paragraphs),
+                                  color: AppColors.paragraph),
                             ),
                           ],
                         ),
                         Constatnts.height40,
                         Container(
                           decoration: BoxDecoration(
-                            border: Border.all(color: AppColors.darkGrey),
+                            border: Border.all(color: AppColors.paragraphLight),
                             borderRadius: BorderRadius.circular(8.0.r),
                           ),
                           child: Row(
@@ -152,14 +153,14 @@ class LoginScreen extends StatelessWidget {
                           isTitileAviable: true,
                           hint: signin_screen.email.tr(),
                           hintStyle: AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),
                           titleStyle: AppTheme.textTheme.titleLarge,
                           contentStyle:
                               AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),
@@ -192,14 +193,14 @@ class LoginScreen extends StatelessWidget {
                           hint: '********',
                           obscureText: cubit.isHide,
                           hintStyle: AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),
                           titleStyle: AppTheme.textTheme.titleLarge,
                           contentStyle:
                               AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),
@@ -234,12 +235,12 @@ class LoginScreen extends StatelessWidget {
                         Constatnts.height8,
                         customButton(
                           onTap: () {
-                            // Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(
-                            //     builder: (context) => const MainScreen(),
-                            //   ),
-                            // );
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const MainScreen(),
+                              ),
+                            );
                           },
                           title: signup_screen.signin.tr(),
                           titleStyle:

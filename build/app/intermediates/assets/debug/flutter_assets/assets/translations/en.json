@@ -40,6 +40,14 @@
     "new_password": "New Password",
     "Repeat_password": "Repeat Password",
     "change_password": "Change Password"
-
+  },
+  "premiere_league_id_screen": {
+    "premiere_league_id": "Your premiere league ID",
+    "premiere_league_id_screen_title": "UNLOCK AI FEATURES BY ADDING YOUR FPL ID",
+    "premiere_league_id_screen_sub_title": "By adding your FPL ID you'll be able to access all of our later AI Model features.",
+    "FPL_ID": "FBL ID",
+    "Paste_or_input": "Paste or input ID here",
+    "my_id": "This is my ID",
+    "add_later": "I'll add later in my account"
   }
 }

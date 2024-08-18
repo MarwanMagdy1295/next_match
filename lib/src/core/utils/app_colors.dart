@@ -6,9 +6,18 @@ class AppColors {
   static const Color shadow = Color(0xff090863);
   static const Color appBlack = Color(0xff282832);
   static const Color secondry = Color(0xff9BED16);
-  static const Color paragraphs = Color(0xff6E6D87);
+  static const Color secondry200 = Color(0xffC4F476);
+  static const Color secondryLighter = Color(0xffD8F8A5);
+  static const Color secondryDark = Color(0xff406308);
+  static const Color paragraph = Color(0xff6E6D87);
   static const Color background = Color(0xffF4F4F6);
-  static const Color darkGrey = Color(0xFFA5A5B6);
+  static const Color schemeSecondary = Color(0xffE8DEF8);
+  static const Color schemeBlack = Color(0xff1D1B20);
+  static const Color paragraphLight = Color(0xFFA5A5B6);
+  static const Color warning = Color(0xFFED4916);
+  static const Color warning50 = Color(0xFFFCDED4);
+  static const Color warning100 = Color(0xFFF8B9A5);
+  static const Color warning200 = Color(0xFFF49476);
 
   static const Color darkGreen = Color(0xff7BAA80);
   static const Color white = Colors.white;

@@ -72,7 +72,7 @@ class SignUpScreen extends StatelessWidget {
                               signup_screen.signup_sub_title.tr(),
                               style: AppTheme.textTheme.headlineSmall!.copyWith(
                                   fontWeight: FontWeight.w500,
-                                  color: AppColors.paragraphs),
+                                  color: AppColors.paragraph),
                             ),
                           ],
                         ),
@@ -80,7 +80,7 @@ class SignUpScreen extends StatelessWidget {
                         Constatnts.height8,
                         Container(
                           decoration: BoxDecoration(
-                            border: Border.all(color: AppColors.darkGrey),
+                            border: Border.all(color: AppColors.paragraphLight),
                             borderRadius: BorderRadius.circular(8.0.r),
                           ),
                           child: Row(
@@ -153,14 +153,14 @@ class SignUpScreen extends StatelessWidget {
                           isTitileAviable: true,
                           hint: signup_screen.email.tr(),
                           hintStyle: AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),
                           titleStyle: AppTheme.textTheme.titleLarge,
                           contentStyle:
                               AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),
@@ -184,14 +184,14 @@ class SignUpScreen extends StatelessWidget {
                           hint: '********',
                           obscureText: cubit.isHide,
                           hintStyle: AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),
                           titleStyle: AppTheme.textTheme.titleLarge,
                           contentStyle:
                               AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),
@@ -229,14 +229,14 @@ class SignUpScreen extends StatelessWidget {
                           hint: '********',
                           obscureText: cubit.isHideReapetPassword,
                           hintStyle: AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),
                           titleStyle: AppTheme.textTheme.titleLarge,
                           contentStyle:
                               AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),

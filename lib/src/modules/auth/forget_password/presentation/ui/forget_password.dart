@@ -69,7 +69,7 @@ class ForgetPassword extends StatelessWidget {
                           forget_password_screen.forget_password_sub_title.tr(),
                           style: AppTheme.textTheme.headlineSmall!.copyWith(
                               fontWeight: FontWeight.w500,
-                              color: AppColors.paragraphs),
+                              color: AppColors.paragraph),
                         ),
                       ],
                     ),
@@ -80,13 +80,13 @@ class ForgetPassword extends StatelessWidget {
                       isTitileAviable: true,
                       hint: forget_password_screen.email.tr(),
                       hintStyle: AppTheme.textTheme.headlineSmall?.copyWith(
-                        color: AppColors.paragraphs,
+                        color: AppColors.paragraph,
                         fontWeight: FontWeight.w500,
                         fontStyle: FontStyle.italic,
                       ),
                       titleStyle: AppTheme.textTheme.titleLarge,
                       contentStyle: AppTheme.textTheme.headlineSmall?.copyWith(
-                        color: AppColors.paragraphs,
+                        color: AppColors.paragraph,
                         fontWeight: FontWeight.w500,
                         fontStyle: FontStyle.italic,
                       ),
@@ -144,7 +144,7 @@ class ForgetPassword extends StatelessWidget {
                           forget_password_screen.recalled_your_password.tr(),
                           style: AppTheme.textTheme.titleLarge!.copyWith(
                               fontWeight: FontWeight.w500,
-                              color: AppColors.paragraphs),
+                              color: AppColors.paragraph),
                         ),
                         Text(
                           ' ${forget_password_screen.signin.tr()}',

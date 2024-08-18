@@ -82,7 +82,7 @@ class ResetPasswordScreen extends StatelessWidget {
                                   .tr(),
                               style: AppTheme.textTheme.headlineSmall!.copyWith(
                                   fontWeight: FontWeight.w500,
-                                  color: AppColors.paragraphs),
+                                  color: AppColors.paragraph),
                             ),
                           ],
                         ),
@@ -93,14 +93,14 @@ class ResetPasswordScreen extends StatelessWidget {
                           hint: '********',
                           obscureText: cubit.isHide,
                           hintStyle: AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),
                           titleStyle: AppTheme.textTheme.titleLarge,
                           contentStyle:
                               AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),
@@ -138,14 +138,14 @@ class ResetPasswordScreen extends StatelessWidget {
                           hint: '********',
                           obscureText: cubit.isHideReapetPassword,
                           hintStyle: AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),
                           titleStyle: AppTheme.textTheme.titleLarge,
                           contentStyle:
                               AppTheme.textTheme.headlineSmall?.copyWith(
-                            color: AppColors.paragraphs,
+                            color: AppColors.paragraph,
                             fontWeight: FontWeight.w500,
                             fontStyle: FontStyle.italic,
                           ),

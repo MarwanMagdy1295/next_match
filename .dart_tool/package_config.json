@@ -278,6 +278,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "equatable",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/equatable-2.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "external_path",
       "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/external_path-1.0.3",
       "packageUri": "lib/",
@@ -306,6 +312,12 @@
       "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/fixnum-1.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.19"
+    },
+    {
+      "name": "fl_chart",
+      "rootUri": "file:///Users/marwanmagdy/.pub-cache/hosted/pub.dev/fl_chart-0.68.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
     },
     {
       "name": "flutter",
@@ -986,7 +998,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-08-06T20:15:55.764005Z",
+  "generated": "2024-08-16T08:29:02.243063Z",
   "generator": "pub",
   "generatorVersion": "3.2.0"
 }

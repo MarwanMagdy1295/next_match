@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:next_match/src/modules/auth/otp_screen/presentation/controller/otp_screen_cubit.dart';
-import 'package:next_match/src/modules/auth/premiere_league_id_sscreen/presentation/ui/premiere_league_id_screen.dart';
+import 'package:next_match/src/modules/premiere_league_id_sscreen/presentation/ui/premiere_league_id_screen.dart';
 import 'package:next_match/src/modules/auth/reset_password/presentation/ui/reset_password_screen.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
@@ -78,7 +78,7 @@ class OtpScreen extends StatelessWidget {
                               otp_screen.otp_screen_sub_title.tr(),
                               style: AppTheme.textTheme.headlineSmall!.copyWith(
                                   fontWeight: FontWeight.w500,
-                                  color: AppColors.paragraphs),
+                                  color: AppColors.paragraph),
                             ),
                           ],
                         ),
