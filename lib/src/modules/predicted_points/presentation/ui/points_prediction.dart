@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:next_match/src/app/di_service.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
 import 'package:next_match/src/core/utils/constants.dart';
 import 'package:next_match/src/modules/auth/login/presentation/controller/cubit/login_screen_cubit.dart';
@@ -46,7 +47,8 @@ class _PointsPredectionState extends State<PointsPredection> {
           ),
         ),
         body: BlocProvider(
-          create: (BuildContext context) => LoginScreenCubit(),
+          create: (BuildContext context) =>
+              LoginScreenCubit(loginRepository: di()),
           child: Builder(
             builder: (context) {
               // final cubit = context.watch<LoginScreenCubit>();
