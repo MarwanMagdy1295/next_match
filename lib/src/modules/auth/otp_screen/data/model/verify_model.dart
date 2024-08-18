@@ -24,13 +24,13 @@ class VerifyModel {
 
   factory VerifyModel.fromJson(Map<String, dynamic> json) => VerifyModel(
         isSuccess: json["isSuccess"],
-        userModel: UserModel.fromJson(json["UserModel"]),
+        userModel: UserModel.fromJson(json["data"]),
         message: json["message"],
       );
 
   Map<String, dynamic> toJson() => {
         "isSuccess": isSuccess,
-        "UserModel": userModel!.toJson(),
+        "daata": userModel!.toJson(),
         "message": message,
       };
 }
