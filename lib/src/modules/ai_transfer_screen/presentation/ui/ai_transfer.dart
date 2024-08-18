@@ -3,6 +3,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:next_match/src/app/di_service.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
 import 'package:next_match/src/core/utils/app_theme.dart';
 import 'package:next_match/src/core/utils/assets/assets.gen.dart';
@@ -32,7 +33,8 @@ class AiTransfer extends StatelessWidget {
           ),
         ),
         body: BlocProvider(
-          create: (BuildContext context) => LoginScreenCubit(),
+          create: (BuildContext context) =>
+              LoginScreenCubit(loginRepository: di()),
           child: Builder(
             builder: (context) {
               // final cubit = context.watch<LoginScreenCubit>();
