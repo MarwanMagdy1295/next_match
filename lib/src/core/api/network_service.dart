@@ -3,6 +3,7 @@
 import 'dart:io';
 
 import 'package:dio/dio.dart';
+import 'package:next_match/src/app/di_service.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 import 'package:next_match/src/core/services/prefs_service.dart';
 
@@ -17,9 +18,7 @@ class NetworkService {
 
   late final Dio dio;
 
-  final baseUrl = 'https://localhost:44389/api/v6/';
-  // FlavorConfig.instance.values.baseUrl;
-
+  final baseUrl = 'https://api.fantasy24.club/api/';
   void _init() {
     final options = BaseOptions(
       headers: {
@@ -72,8 +71,7 @@ class NetworkService {
     if (token != null && token) {
       return Options(
         headers: {
-          // 'Authorization': 'Bearer ${di<UserRepository>().getUser()?.token}',
-          'Authorization': 'Bearer ',
+          'Authorization': 'Bearer ${di<PrefsService>().user}',
           'lang': _prefsService.locale.get(),
         },
       );

@@ -17,7 +17,7 @@ class PrefsService {
   final locale = const LocaleCache();
 }
 
-class UserCache extends _CacheField<Map<String, dynamic>> {
+class UserCache extends _CacheField<String> {
   const UserCache() : super(_CacheConstants.user);
 }
 

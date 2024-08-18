@@ -2,9 +2,8 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:next_match/src/app/di_service.dart';
 import 'package:next_match/src/modules/auth/otp_screen/presentation/controller/otp_screen_cubit.dart';
-import 'package:next_match/src/modules/premiere_league_id_sscreen/presentation/ui/premiere_league_id_screen.dart';
-import 'package:next_match/src/modules/auth/reset_password/presentation/ui/reset_password_screen.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
 import 'package:next_match/src/core/utils/app_theme.dart';
@@ -22,9 +21,11 @@ class OtpScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: AppColors.background,
         body: BlocProvider(
-          create: (BuildContext context) => OtpScreenCubit(),
+          create: (BuildContext context) =>
+              OtpScreenCubit(verifyScreenRepository: di()),
           child: Builder(builder: (context) {
-            final cubit = context.watch<OtpScreenCubit>();
+            final cubit = context.read<OtpScreenCubit>();
+            cubit.fromSignup = fromSignup;
             return Container(
               padding: EdgeInsets.symmetric(horizontal: 16.0.w),
               color: AppColors.background,
@@ -125,21 +126,7 @@ class OtpScreen extends StatelessWidget {
                           onTap: cubit.isDisabled
                               ? null
                               : () {
-                                  fromSignup
-                                      ? Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                            builder: (context) =>
-                                                const PremiereLeagueIdScreen(),
-                                          ),
-                                        )
-                                      : Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                            builder: (context) =>
-                                                const ResetPasswordScreen(),
-                                          ),
-                                        );
+                                  cubit.postFBLData(context);
                                 },
                           title: otp_screen.verify.tr(),
                           titleStyle:
