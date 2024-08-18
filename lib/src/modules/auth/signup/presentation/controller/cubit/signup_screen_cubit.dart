@@ -1,9 +1,22 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:next_match/src/app/di_service.dart';
 import 'package:next_match/src/core/base_cubit/base_cubit.dart';
+import 'package:next_match/src/core/services/prefs_service.dart';
+import 'package:next_match/src/modules/auth/otp_screen/presentation/ui/otp_screen.dart';
+import 'package:next_match/src/modules/auth/signup/data/model/sign_up_model.dart';
+import 'package:next_match/src/modules/auth/signup/data/repositories/signup_screen_repository.dart';
 import 'package:next_match/src/modules/auth/signup/presentation/controller/cubit/signup_screen_state.dart';
 
-class SignupScreenCubit extends BaseCubit<SignupScreenState> {
-  SignupScreenCubit() : super(SignupScreenInitial());
+class SignupScreenCubit extends BaseCubit<SignupScreenState>
+    with
+        AdaptiveCubit<SignupScreenState>,
+        ResetLazySingleton<SignupScreenCubit, SignupScreenState> {
+  final SignupScreenRepository _signupScreenRepository;
+  SignupScreenCubit({required SignupScreenRepository signupScreenRepository})
+      : _signupScreenRepository = signupScreenRepository,
+        super(SignupScreenInitial());
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   TextEditingController repeatPasswordController = TextEditingController();
@@ -24,27 +37,34 @@ class SignupScreenCubit extends BaseCubit<SignupScreenState> {
     emit(SignupScreenHidePasswordState());
   }
 
-  // Future<void> postLoginData() async {
-  //   if (formKey.currentState!.validate()) {
-  //     isLaoding = true;
-  //     emit(SignInLoadingState());
-  //     await _authRepository
-  //         .login(
-  //             body: AuthLoginRequestModel(
-  //       phoneNumber: emailController.text,
-  //       password: passwordController.text,
-  //     ))
-  //         .then((value) {
-  //       emit(SignInLoadingState());
-  //       isLaoding = false;
-  //       RouteManager.navigateAndPopAll(
-  //         const MapScreen(),
-  //       );
-  //     }).catchError((onError) {
-  //       emit(SignInLoadingState());
-  //       isLaoding = false;
-  //       print('login error=>  $onError');
-  //     });
-  //   }
-  // }
+  Future<void> postSignupData(BuildContext context) async {
+    if (formKey.currentState!.validate()) {
+      SignupModel? res;
+      isLaoding = true;
+      emit(SignupScreenLoading());
+      await _signupScreenRepository
+          .signup(
+        email: emailController.text,
+        password: passwordController.text,
+      )
+          .then((value) {
+        res = value;
+        di<PrefsService>().user.put(res!.data!.accessToken!);
+        isLaoding = false;
+        emit(SignupScreenLoading());
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const OtpScreen(
+              fromSignup: true,
+            ),
+          ),
+        );
+      }).catchError((onError) {
+        isLaoding = false;
+        emit(SignupScreenLoading());
+        log('signup error=>  $onError');
+      });
+    }
+  }
 }
