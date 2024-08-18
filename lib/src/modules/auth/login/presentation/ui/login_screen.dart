@@ -4,6 +4,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:next_match/src/app/di_service.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
 import 'package:next_match/src/core/utils/app_theme.dart';
 import 'package:next_match/src/core/utils/assets/translations/keys.dart';
@@ -11,7 +12,6 @@ import 'package:next_match/src/core/utils/constants.dart';
 import 'package:next_match/src/modules/auth/forget_password/presentation/ui/forget_password.dart';
 import 'package:next_match/src/modules/auth/login/presentation/controller/cubit/login_screen_cubit.dart';
 import 'package:next_match/src/modules/auth/signup/presentation/ui/signup_screen.dart';
-import 'package:next_match/src/modules/main_screen/presentation/ui/main_screen.dart';
 import 'package:next_match/widget/custom_button.dart';
 import 'package:next_match/widget/custom_text_form_field.dart';
 
@@ -24,7 +24,8 @@ class LoginScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: AppColors.background,
         body: BlocProvider(
-          create: (BuildContext context) => LoginScreenCubit(),
+          create: (BuildContext context) =>
+              LoginScreenCubit(loginRepository: di()),
           child: Builder(builder: (context) {
             final cubit = context.watch<LoginScreenCubit>();
             return Container(
@@ -35,6 +36,7 @@ class LoginScreen extends StatelessWidget {
                   FocusScope.of(context).unfocus();
                 },
                 child: Form(
+                  key: cubit.formKey,
                   child: SingleChildScrollView(
                     padding: EdgeInsets.only(bottom: 20.0.h),
                     child: Column(
@@ -174,8 +176,24 @@ class LoginScreen extends StatelessWidget {
                               color: AppColors.grey,
                             ),
                           ),
+                          errorBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8.0),
+                            borderSide: const BorderSide(
+                              color: AppColors.red,
+                            ),
+                          ),
                           isFill: true,
                           color: AppColors.white,
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Please Enter Your Email';
+                            } else if (RegExp(
+                                    r'^.+@[a-zA-Z]+\.{1}[a-zA-Z]+(\.{0,1}[a-zA-Z]+)$')
+                                .hasMatch(value)) {
+                              return 'Please Enter A Valid Email';
+                            }
+                            return null;
+                          },
                         ),
                         Constatnts.height24,
                         customTextFeild(
@@ -214,6 +232,12 @@ class LoginScreen extends StatelessWidget {
                               color: AppColors.grey,
                             ),
                           ),
+                          errorBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(8.0),
+                            borderSide: const BorderSide(
+                              color: AppColors.red,
+                            ),
+                          ),
                           isFill: true,
                           color: AppColors.white,
                           suffixIcon: GestureDetector(
@@ -230,17 +254,18 @@ class LoginScreen extends StatelessWidget {
                                     color: AppColors.appBlack,
                                   ),
                           ),
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Please Enter Your Password';
+                            }
+                            return null;
+                          },
                         ),
                         Constatnts.height40,
                         Constatnts.height8,
                         customButton(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const MainScreen(),
-                              ),
-                            );
+                            cubit.postLoginData(context);
                           },
                           title: signup_screen.signin.tr(),
                           titleStyle:
