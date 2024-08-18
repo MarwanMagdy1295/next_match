@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
 import 'package:next_match/src/core/utils/app_theme.dart';
 import 'package:next_match/src/modules/ai_team_screen/presentation/ui/ai_team_screen.dart';
+import 'package:next_match/src/modules/ai_transfer_screen/presentation/ui/ai_transfer.dart';
 import 'package:next_match/src/modules/my_team_screen/presentation/ui/my_team_screen.dart';
 import 'package:next_match/src/modules/predicted_points/presentation/ui/points_prediction.dart';
 
@@ -116,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen>
                     MyTeamScreen(),
                     PointsPredection(),
                     AiTeamScreen(),
-                    PointsPredection(),
+                    AiTransfer(),
                   ],
                 ),
               ),

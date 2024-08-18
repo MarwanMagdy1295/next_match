@@ -59,3 +59,9 @@ class premiere_league_id_screen {
   static const String add_later = "premiere_league_id_screen.add_later";
 }
 
+class ai_transfer_screen {
+  static const String make_transfer = "ai_transfer_screen.make_transfer";
+  static const String reject_transfer = "ai_transfer_screen.reject_transfer";
+  static const String more_transfers = "ai_transfer_screen.more_transfers";
+}
+
