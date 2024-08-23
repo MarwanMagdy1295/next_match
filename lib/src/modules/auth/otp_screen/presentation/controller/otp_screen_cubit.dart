@@ -23,6 +23,7 @@ class OtpScreenCubit extends BaseCubit<OtpScreenState>
   bool isDisabled = true;
   bool isLoading = false;
   bool fromSignup = false;
+  UserModel? user;
 
   void isButtonDisabled() {
     emit(OtpScreenLoading());
@@ -44,8 +45,8 @@ class OtpScreenCubit extends BaseCubit<OtpScreenState>
     )
         .then((value) {
       res = value;
-      UserModel user = res!.userModel!;
-      log('user=>  ${user.email}');
+      user = res!.userModel!;
+      log('user=>  ${user!.email}');
       isLoading = false;
       emit(OtpScreenLoading());
       fromSignup
@@ -58,7 +59,9 @@ class OtpScreenCubit extends BaseCubit<OtpScreenState>
           : Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const ResetPasswordScreen(),
+                builder: (context) => ResetPasswordScreen(
+                  email: user!.email!,
+                ),
               ),
             );
     }).catchError((onError) {

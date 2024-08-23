@@ -26,6 +26,7 @@ class LoginScreen extends StatelessWidget {
         body: BlocProvider(
           create: (BuildContext context) =>
               LoginScreenCubit(loginRepository: di()),
+          lazy: true,
           child: Builder(builder: (context) {
             final cubit = context.watch<LoginScreenCubit>();
             return Container(
@@ -151,6 +152,7 @@ class LoginScreen extends StatelessWidget {
                         ),
                         Constatnts.height24,
                         customTextFeild(
+                          controller: cubit.emailController,
                           title: signin_screen.email.tr(),
                           isTitileAviable: true,
                           hint: signin_screen.email.tr(),
@@ -197,6 +199,7 @@ class LoginScreen extends StatelessWidget {
                         ),
                         Constatnts.height24,
                         customTextFeild(
+                          controller: cubit.passwordController,
                           title: signin_screen.password.tr(),
                           isTitileAviable: true,
                           isForgetAviable: true,

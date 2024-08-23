@@ -4,6 +4,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:next_match/src/app/di_service.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
 import 'package:next_match/src/core/utils/app_theme.dart';
 import 'package:next_match/src/core/utils/constants.dart';
@@ -14,7 +15,8 @@ import 'package:next_match/src/core/utils/assets/translations/keys.dart';
 import 'package:next_match/widget/custom_button.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
-  const ResetPasswordScreen({super.key});
+  final String email;
+  const ResetPasswordScreen({super.key, required this.email});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,8 @@ class ResetPasswordScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: AppColors.background,
         body: BlocProvider(
-          create: (context) => ResetPasswordScreenCubit(),
+          create: (context) =>
+              ResetPasswordScreenCubit(resetPasswordScreenRepository: di()),
           child: Builder(builder: (context) {
             final cubit = context.watch<ResetPasswordScreenCubit>();
             return Container(
@@ -33,6 +36,7 @@ class ResetPasswordScreen extends StatelessWidget {
                   FocusScope.of(context).unfocus();
                 },
                 child: Form(
+                  key: cubit.formKey,
                   child: SingleChildScrollView(
                     padding: EdgeInsets.only(bottom: 20.0.h),
                     child: Column(
@@ -88,6 +92,7 @@ class ResetPasswordScreen extends StatelessWidget {
                         ),
                         Constatnts.height24,
                         customTextFeild(
+                          controller: cubit.passwordController,
                           title: signup_screen.password.tr(),
                           isTitileAviable: true,
                           hint: '********',
@@ -130,9 +135,18 @@ class ResetPasswordScreen extends StatelessWidget {
                                     color: AppColors.appBlack,
                                   ),
                           ),
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Please Enter Your Password';
+                            } else if (value.length < 8) {
+                              return 'Password Should  8 Or More Than 8 Character';
+                            }
+                            return null;
+                          },
                         ),
                         Constatnts.height24,
                         customTextFeild(
+                          controller: cubit.repeatPasswordController,
                           title: signup_screen.Repeat_password.tr(),
                           isTitileAviable: true,
                           hint: '********',
@@ -175,17 +189,20 @@ class ResetPasswordScreen extends StatelessWidget {
                                     color: AppColors.appBlack,
                                   ),
                           ),
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Please Repeat Password';
+                            } else if (value != cubit.passwordController.text) {
+                              return 'Password Not match';
+                            }
+                            return null;
+                          },
                         ),
                         Constatnts.height40,
                         Constatnts.height8,
                         customButton(
                           onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const LoginScreen(),
-                              ),
-                            );
+                            cubit.resetPassword(context, email);
                           },
                           title: reset_password_screen.change_password.tr(),
                           titleStyle:
