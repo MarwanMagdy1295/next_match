@@ -10,8 +10,9 @@ class ForgetPasswordScreenRepository
   final ForgetPasswordScreenRemoteDataSource _forgetPasswordRemoteDataSource;
 
   ForgetPasswordScreenRepository({
-    required ForgetPasswordScreenRemoteDataSource forgetPasswordRepository,
-  }) : _forgetPasswordRemoteDataSource = forgetPasswordRepository;
+    required ForgetPasswordScreenRemoteDataSource
+        forgetPasswordScreenRemoteDataSource,
+  }) : _forgetPasswordRemoteDataSource = forgetPasswordScreenRemoteDataSource;
 
   @override
   Future<LoginModel?> forgetPasswordSendEmail({required String email}) {

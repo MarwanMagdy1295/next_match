@@ -189,11 +189,13 @@ class LoginScreen extends StatelessWidget {
                           validator: (value) {
                             if (value == null || value.isEmpty) {
                               return 'Please Enter Your Email';
-                            } else if (RegExp(
-                                    r'^.+@[a-zA-Z]+\.{1}[a-zA-Z]+(\.{0,1}[a-zA-Z]+)$')
-                                .hasMatch(value)) {
-                              return 'Please Enter A Valid Email';
                             }
+                            //  else if (RegExp(
+                            //         r'^.+@[a-zA-Z]+\.{1}[a-zA-Z]+(\.{0,1}[a-zA-Z]+)$')
+                            //     .hasMatch(value)) {
+                            //   print(value);
+                            //   return 'Please Enter A Valid Email';
+                            // }
                             return null;
                           },
                         ),

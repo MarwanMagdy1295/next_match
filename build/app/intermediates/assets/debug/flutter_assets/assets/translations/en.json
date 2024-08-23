@@ -49,5 +49,10 @@
     "Paste_or_input": "Paste or input ID here",
     "my_id": "This is my ID",
     "add_later": "I'll add later in my account"
+  },
+  "ai_transfer_screen": {
+    "make_transfer" : "Make Transfer",
+    "reject_transfer" : "Reject transfer",
+    "more_transfers" : "More transfers"
   }
 }

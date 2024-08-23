@@ -9,8 +9,8 @@ class VerifyScreenRepository extends VerifyScreenRepositoryInterface {
   final VerifyScreenRemoteDataSource _verifyRemoteDataSource;
 
   VerifyScreenRepository({
-    required VerifyScreenRemoteDataSource verifyRepository,
-  }) : _verifyRemoteDataSource = verifyRepository;
+    required VerifyScreenRemoteDataSource verifyScreenRemoteDataSource,
+  }) : _verifyRemoteDataSource = verifyScreenRemoteDataSource;
 
   @override
   Future<VerifyModel?> verify({required String code}) {

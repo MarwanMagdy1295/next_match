@@ -9,8 +9,8 @@ class LoginScreenRepository extends LoginScreenRepositoryInterface {
   final LoginScreenRemoteDataSource _loginRemoteDataSource;
 
   LoginScreenRepository({
-    required LoginScreenRemoteDataSource loginRepository,
-  }) : _loginRemoteDataSource = loginRepository;
+    required LoginScreenRemoteDataSource loginScreenRemoteDataSource,
+  }) : _loginRemoteDataSource = loginScreenRemoteDataSource;
 
   @override
   Future<LoginModel?> login({required String email, required String password}) {
