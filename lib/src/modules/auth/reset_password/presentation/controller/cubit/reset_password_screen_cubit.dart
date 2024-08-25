@@ -19,7 +19,7 @@ class ResetPasswordScreenCubit extends BaseCubit<ResetPasswordScreenState>
 
   TextEditingController passwordController = TextEditingController();
   TextEditingController repeatPasswordController = TextEditingController();
-  bool isLaoding = false;
+  bool isLoading = false;
   bool isHide = true;
   bool isHideReapetPassword = true;
   final formKey = GlobalKey<FormState>();
@@ -39,7 +39,7 @@ class ResetPasswordScreenCubit extends BaseCubit<ResetPasswordScreenState>
   Future<void> resetPassword(BuildContext context, String email) async {
     if (formKey.currentState!.validate()) {
       SignupModel? res;
-      isLaoding = true;
+      isLoading = true;
       emit(ResetPasswordScreenLoading());
       await _resetPasswordScreenRepository
           .resetPassword(
@@ -49,7 +49,7 @@ class ResetPasswordScreenCubit extends BaseCubit<ResetPasswordScreenState>
           .then((value) {
         res = value;
         // di<PrefsService>().user.put(res!.data!.accessToken!);
-        isLaoding = false;
+        isLoading = false;
         emit(ResetPasswordScreenLoading());
         Navigator.push(
           context,
@@ -58,7 +58,7 @@ class ResetPasswordScreenCubit extends BaseCubit<ResetPasswordScreenState>
           ),
         );
       }).catchError((onError) {
-        isLaoding = false;
+        isLoading = false;
         emit(ResetPasswordScreenLoading());
         log('signup error=>  $onError');
       });

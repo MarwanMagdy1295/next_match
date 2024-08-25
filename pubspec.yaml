@@ -44,6 +44,7 @@ dependencies:
   cached_network_image: ^3.3.1
   font_awesome_flutter: ^10.7.0
   fl_chart: ^0.68.0
+  loading_indicator: ^3.1.1
 
 dev_dependencies:
   flutter_test:
