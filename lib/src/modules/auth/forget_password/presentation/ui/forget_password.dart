@@ -10,6 +10,7 @@ import 'package:next_match/src/modules/auth/forget_password/presentation/control
 import 'package:next_match/widget/custom_text_form_field.dart';
 import 'package:next_match/src/core/utils/assets/translations/keys.dart';
 import 'package:next_match/widget/custom_button.dart';
+import 'package:next_match/widget/loading_widget.dart';
 
 class ForgetPassword extends StatelessWidget {
   const ForgetPassword({super.key});
@@ -128,30 +129,32 @@ class ForgetPassword extends StatelessWidget {
                         ),
                         Constatnts.height40,
                         Constatnts.height8,
-                        customButton(
-                          onTap: () {
-                            cubit.sendEmail(context);
-                          },
-                          title: forget_password_screen.send_email.tr(),
-                          titleStyle:
-                              AppTheme.textTheme.displayMedium?.copyWith(
-                            color: AppColors.white,
-                            fontSize: 16.0.sp,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8.0.r),
-                          ),
-                          boxShadow: [
-                            const BoxShadow(
-                              color: AppColors.shadow,
-                              blurRadius: 0.0,
-                              spreadRadius: 0.0,
-                              offset: Offset(0, 4),
-                            ),
-                          ],
-                          backgroundColor: AppColors.primary,
-                          padding: const EdgeInsets.all(14.0),
-                        ),
+                        cubit.isLoading
+                            ? const LoadingWidget()
+                            : customButton(
+                                onTap: () {
+                                  cubit.sendEmail(context);
+                                },
+                                title: forget_password_screen.send_email.tr(),
+                                titleStyle:
+                                    AppTheme.textTheme.displayMedium?.copyWith(
+                                  color: AppColors.white,
+                                  fontSize: 16.0.sp,
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.0.r),
+                                ),
+                                boxShadow: [
+                                  const BoxShadow(
+                                    color: AppColors.shadow,
+                                    blurRadius: 0.0,
+                                    spreadRadius: 0.0,
+                                    offset: Offset(0, 4),
+                                  ),
+                                ],
+                                backgroundColor: AppColors.primary,
+                                padding: const EdgeInsets.all(14.0),
+                              ),
                         Constatnts.height24,
                         Constatnts.height2,
                         Row(

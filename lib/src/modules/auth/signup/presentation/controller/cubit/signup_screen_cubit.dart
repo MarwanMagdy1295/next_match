@@ -20,7 +20,7 @@ class SignupScreenCubit extends BaseCubit<SignupScreenState>
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   TextEditingController repeatPasswordController = TextEditingController();
-  bool isLaoding = false;
+  bool isLoading = false;
   bool isHide = true;
   bool isHideReapetPassword = true;
   final formKey = GlobalKey<FormState>();
@@ -40,7 +40,7 @@ class SignupScreenCubit extends BaseCubit<SignupScreenState>
   Future<void> postSignupData(BuildContext context) async {
     if (formKey.currentState!.validate()) {
       SignupModel? res;
-      isLaoding = true;
+      isLoading = true;
       emit(SignupScreenLoading());
       await _signupScreenRepository
           .signup(
@@ -50,7 +50,7 @@ class SignupScreenCubit extends BaseCubit<SignupScreenState>
           .then((value) {
         res = value;
         di<PrefsService>().user.put(res!.data!.accessToken!);
-        isLaoding = false;
+        isLoading = false;
         emit(SignupScreenLoading());
         Navigator.push(
           context,
@@ -61,7 +61,7 @@ class SignupScreenCubit extends BaseCubit<SignupScreenState>
           ),
         );
       }).catchError((onError) {
-        isLaoding = false;
+        isLoading = false;
         emit(SignupScreenLoading());
         log('signup error=>  $onError');
       });

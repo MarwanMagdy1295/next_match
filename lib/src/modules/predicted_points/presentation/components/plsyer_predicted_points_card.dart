@@ -15,7 +15,8 @@ class PlayerPredictedPointCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 16.0.w, vertical: 16.0.h),
-      margin: EdgeInsetsDirectional.only(bottom: 12.0.w),
+      margin: EdgeInsetsDirectional.only(
+          bottom: 12.0.h, start: 16.0.w, end: 16.0.w),
       decoration: BoxDecoration(
         color: AppColors.white,
         borderRadius: BorderRadius.circular(12.0.r),

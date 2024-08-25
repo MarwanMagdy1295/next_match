@@ -7,11 +7,12 @@ import 'package:next_match/src/core/utils/app_colors.dart';
 import 'package:next_match/src/core/utils/app_theme.dart';
 import 'package:next_match/src/core/utils/constants.dart';
 import 'package:next_match/src/modules/auth/login/presentation/ui/login_screen.dart';
-import 'package:next_match/src/modules/auth/otp_screen/presentation/ui/otp_screen.dart';
 import 'package:next_match/src/modules/auth/premiere_league_id_sscreen/presentation/controller/premiere_league_id_screen_cubit.dart';
+import 'package:next_match/src/modules/main_screen/presentation/ui/main_screen.dart';
 import 'package:next_match/widget/custom_text_form_field.dart';
 import 'package:next_match/src/core/utils/assets/translations/keys.dart';
 import 'package:next_match/widget/custom_button.dart';
+import 'package:next_match/widget/loading_widget.dart';
 
 class PremiereLeagueIdScreen extends StatelessWidget {
   const PremiereLeagueIdScreen({super.key});
@@ -128,44 +129,44 @@ class PremiereLeagueIdScreen extends StatelessWidget {
                         ),
                         Constatnts.height40,
                         Constatnts.height8,
-                        customButton(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const LoginScreen(),
+                        cubit.isLoading
+                            ? const LoadingWidget()
+                            : customButton(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const LoginScreen(),
+                                    ),
+                                  );
+                                },
+                                title: premiere_league_id_screen.my_id.tr(),
+                                titleStyle:
+                                    AppTheme.textTheme.displayMedium?.copyWith(
+                                  color: AppColors.white,
+                                  fontSize: 16.0.sp,
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.0.r),
+                                ),
+                                boxShadow: [
+                                  const BoxShadow(
+                                    color: AppColors.shadow,
+                                    blurRadius: 0.0,
+                                    spreadRadius: 0.0,
+                                    offset: Offset(0, 4),
+                                  ),
+                                ],
+                                backgroundColor: AppColors.primary,
+                                padding: const EdgeInsets.all(14.0),
                               ),
-                            );
-                          },
-                          title: premiere_league_id_screen.my_id.tr(),
-                          titleStyle:
-                              AppTheme.textTheme.displayMedium?.copyWith(
-                            color: AppColors.white,
-                            fontSize: 16.0.sp,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8.0.r),
-                          ),
-                          boxShadow: [
-                            const BoxShadow(
-                              color: AppColors.shadow,
-                              blurRadius: 0.0,
-                              spreadRadius: 0.0,
-                              offset: Offset(0, 4),
-                            ),
-                          ],
-                          backgroundColor: AppColors.primary,
-                          padding: const EdgeInsets.all(14.0),
-                        ),
                         Constatnts.height16,
                         customButton(
                           onTap: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const OtpScreen(
-                                  fromSignup: false,
-                                ),
+                                builder: (context) => const MainScreen(),
                               ),
                             );
                           },

@@ -8,6 +8,7 @@ import 'package:next_match/src/modules/auth/login/data/model/login_model.dart';
 import 'package:next_match/src/modules/auth/login/data/repositories/login_screen_repository.dart';
 import 'package:next_match/src/modules/auth/login/presentation/controller/cubit/login_screen_state.dart';
 import 'package:next_match/src/modules/main_screen/presentation/ui/main_screen.dart';
+import 'package:next_match/widget/custom_toast.dart';
 
 class LoginScreenCubit extends BaseCubit<LoginScreenState>
     with
@@ -19,7 +20,7 @@ class LoginScreenCubit extends BaseCubit<LoginScreenState>
         super(LoginScreenInitial());
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  bool isLaoding = false;
+  bool isLoading = false;
   bool isHide = true;
   final formKey = GlobalKey<FormState>();
 
@@ -32,7 +33,7 @@ class LoginScreenCubit extends BaseCubit<LoginScreenState>
   Future<void> postLoginData(BuildContext context) async {
     if (formKey.currentState!.validate()) {
       LoginModel? res;
-      isLaoding = true;
+      isLoading = true;
       emit(LoginScreenLoadingState());
       await _loginScreenRepository
           .login(
@@ -42,7 +43,7 @@ class LoginScreenCubit extends BaseCubit<LoginScreenState>
           .then((value) {
         res = value;
         di<PrefsService>().user.put(res!.data!.accessToken!);
-        isLaoding = false;
+        isLoading = false;
         emit(LoginScreenLoadingState());
         Navigator.push(
           context,
@@ -51,8 +52,9 @@ class LoginScreenCubit extends BaseCubit<LoginScreenState>
           ),
         );
       }).catchError((onError) {
-        isLaoding = false;
+        isLoading = false;
         emit(LoginScreenLoadingState());
+        customToast('Email Or Password Not Valid');
         log('login error=>  $onError');
       });
     }

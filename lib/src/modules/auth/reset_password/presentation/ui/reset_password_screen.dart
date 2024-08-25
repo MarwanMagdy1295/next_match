@@ -8,11 +8,11 @@ import 'package:next_match/src/app/di_service.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
 import 'package:next_match/src/core/utils/app_theme.dart';
 import 'package:next_match/src/core/utils/constants.dart';
-import 'package:next_match/src/modules/auth/login/presentation/ui/login_screen.dart';
 import 'package:next_match/src/modules/auth/reset_password/presentation/controller/cubit/reset_password_screen_cubit.dart';
 import 'package:next_match/widget/custom_text_form_field.dart';
 import 'package:next_match/src/core/utils/assets/translations/keys.dart';
 import 'package:next_match/widget/custom_button.dart';
+import 'package:next_match/widget/loading_widget.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
   final String email;
@@ -200,30 +200,33 @@ class ResetPasswordScreen extends StatelessWidget {
                         ),
                         Constatnts.height40,
                         Constatnts.height8,
-                        customButton(
-                          onTap: () {
-                            cubit.resetPassword(context, email);
-                          },
-                          title: reset_password_screen.change_password.tr(),
-                          titleStyle:
-                              AppTheme.textTheme.displayMedium?.copyWith(
-                            color: AppColors.white,
-                            fontSize: 16.0.sp,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8.0.r),
-                          ),
-                          boxShadow: [
-                            const BoxShadow(
-                              color: AppColors.shadow,
-                              blurRadius: 0.0,
-                              spreadRadius: 0.0,
-                              offset: Offset(0, 4),
-                            ),
-                          ],
-                          backgroundColor: AppColors.primary,
-                          padding: const EdgeInsets.all(14.0),
-                        ),
+                        cubit.isLoading
+                            ? const LoadingWidget()
+                            : customButton(
+                                onTap: () {
+                                  cubit.resetPassword(context, email);
+                                },
+                                title:
+                                    reset_password_screen.change_password.tr(),
+                                titleStyle:
+                                    AppTheme.textTheme.displayMedium?.copyWith(
+                                  color: AppColors.white,
+                                  fontSize: 16.0.sp,
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.0.r),
+                                ),
+                                boxShadow: [
+                                  const BoxShadow(
+                                    color: AppColors.shadow,
+                                    blurRadius: 0.0,
+                                    spreadRadius: 0.0,
+                                    offset: Offset(0, 4),
+                                  ),
+                                ],
+                                backgroundColor: AppColors.primary,
+                                padding: const EdgeInsets.all(14.0),
+                              ),
                       ],
                     ),
                   ),

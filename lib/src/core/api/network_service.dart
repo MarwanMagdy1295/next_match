@@ -110,7 +110,7 @@ class NetworkService {
     required String url,
     Map<String, dynamic>? query,
     Map<String, dynamic>? data,
-    String lang = 'ar',
+    String lang = 'en',
     bool token = false,
     bool queue = true,
   }) async {
@@ -126,7 +126,7 @@ class NetworkService {
     required String url,
     Map<String, dynamic>? query,
     Map<String, dynamic>? data,
-    String lang = 'ar',
+    String lang = 'en',
     bool token = false,
     bool queue = true,
   }) async {
@@ -142,7 +142,7 @@ class NetworkService {
     required String url,
     Map<String, dynamic>? query,
     Map<String, dynamic>? data,
-    String lang = 'ar',
+    String lang = 'en',
     bool token = false,
     bool queue = true,
   }) async {

@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:next_match/src/app/di_service.dart';
 import 'package:next_match/src/modules/auth/otp_screen/presentation/controller/otp_screen_cubit.dart';
+import 'package:next_match/widget/loading_widget.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:next_match/src/core/utils/app_colors.dart';
 import 'package:next_match/src/core/utils/app_theme.dart';
@@ -122,33 +123,35 @@ class OtpScreen extends StatelessWidget {
                         ),
                         Constatnts.height40,
                         Constatnts.height8,
-                        customButton(
-                          onTap: cubit.isDisabled
-                              ? null
-                              : () {
-                                  cubit.postFBLData(context);
-                                },
-                          title: otp_screen.verify.tr(),
-                          titleStyle:
-                              AppTheme.textTheme.displayMedium?.copyWith(
-                            color: AppColors.white,
-                            fontSize: 16.0.sp,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8.0.r),
-                          ),
-                          boxShadow: [
-                            const BoxShadow(
-                              color: AppColors.shadow,
-                              blurRadius: 0.0,
-                              spreadRadius: 0.0,
-                              offset: Offset(0, 4),
-                            ),
-                          ],
-                          backgroundColor: AppColors.primary,
-                          disabledBackgroundColor: AppColors.lightPrimary,
-                          padding: const EdgeInsets.all(14.0),
-                        ),
+                        cubit.isLoading
+                            ? const LoadingWidget()
+                            : customButton(
+                                onTap: cubit.isDisabled
+                                    ? null
+                                    : () {
+                                        cubit.postFBLData(context);
+                                      },
+                                title: otp_screen.verify.tr(),
+                                titleStyle:
+                                    AppTheme.textTheme.displayMedium?.copyWith(
+                                  color: AppColors.white,
+                                  fontSize: 16.0.sp,
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.0.r),
+                                ),
+                                boxShadow: [
+                                  const BoxShadow(
+                                    color: AppColors.shadow,
+                                    blurRadius: 0.0,
+                                    spreadRadius: 0.0,
+                                    offset: Offset(0, 4),
+                                  ),
+                                ],
+                                backgroundColor: AppColors.primary,
+                                disabledBackgroundColor: AppColors.lightPrimary,
+                                padding: const EdgeInsets.all(14.0),
+                              ),
                       ],
                     ),
                   ),

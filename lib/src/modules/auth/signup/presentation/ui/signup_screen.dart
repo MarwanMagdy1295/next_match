@@ -13,6 +13,7 @@ import 'package:next_match/src/modules/auth/login/presentation/ui/login_screen.d
 import 'package:next_match/src/modules/auth/signup/presentation/controller/cubit/signup_screen_cubit.dart';
 import 'package:next_match/widget/custom_button.dart';
 import 'package:next_match/widget/custom_text_form_field.dart';
+import 'package:next_match/widget/loading_widget.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -25,6 +26,7 @@ class SignUpScreen extends StatelessWidget {
         body: BlocProvider(
           create: (BuildContext context) =>
               SignupScreenCubit(signupScreenRepository: di()),
+          lazy: true,
           child: Builder(builder: (context) {
             final cubit = context.watch<SignupScreenCubit>();
             return Container(
@@ -312,30 +314,32 @@ class SignUpScreen extends StatelessWidget {
                         ),
                         Constatnts.height40,
                         Constatnts.height8,
-                        customButton(
-                          onTap: () {
-                            cubit.postSignupData(context);
-                          },
-                          title: signup_screen.signup.tr(),
-                          titleStyle:
-                              AppTheme.textTheme.displayMedium?.copyWith(
-                            color: AppColors.white,
-                            fontSize: 16.0.sp,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8.0.r),
-                          ),
-                          boxShadow: [
-                            const BoxShadow(
-                              color: AppColors.shadow,
-                              blurRadius: 0.0,
-                              spreadRadius: 0.0,
-                              offset: Offset(0, 4),
-                            ),
-                          ],
-                          backgroundColor: AppColors.primary,
-                          padding: const EdgeInsets.all(14.0),
-                        ),
+                        cubit.isLoading
+                            ? const LoadingWidget()
+                            : customButton(
+                                onTap: () {
+                                  cubit.postSignupData(context);
+                                },
+                                title: signup_screen.signup.tr(),
+                                titleStyle:
+                                    AppTheme.textTheme.displayMedium?.copyWith(
+                                  color: AppColors.white,
+                                  fontSize: 16.0.sp,
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.0.r),
+                                ),
+                                boxShadow: [
+                                  const BoxShadow(
+                                    color: AppColors.shadow,
+                                    blurRadius: 0.0,
+                                    spreadRadius: 0.0,
+                                    offset: Offset(0, 4),
+                                  ),
+                                ],
+                                backgroundColor: AppColors.primary,
+                                padding: const EdgeInsets.all(14.0),
+                              ),
                         // Constatnts.height40,
                         // Constatnts.height8,
                         // Row(

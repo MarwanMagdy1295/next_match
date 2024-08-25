@@ -18,13 +18,13 @@ class ForgetPasswordCubit extends BaseCubit<ForgetPasswordState>
         super(ForgetPasswordInitial());
 
   TextEditingController emailController = TextEditingController();
-  bool isLaoding = false;
+  bool isLoading = false;
   final formKey = GlobalKey<FormState>();
 
   Future<void> sendEmail(BuildContext context) async {
     if (formKey.currentState!.validate()) {
       LoginModel? res;
-      isLaoding = true;
+      isLoading = true;
       emit(ForgetPasswordLoading());
       await _forgetPasswordScreenRepository
           .forgetPasswordSendEmail(
@@ -33,7 +33,7 @@ class ForgetPasswordCubit extends BaseCubit<ForgetPasswordState>
           .then((value) {
         res = value;
         // di<PrefsService>().user.put(res!.data!.accessToken!);
-        isLaoding = false;
+        isLoading = false;
         emit(ForgetPasswordLoading());
         Navigator.push(
           context,
@@ -44,7 +44,7 @@ class ForgetPasswordCubit extends BaseCubit<ForgetPasswordState>
           ),
         );
       }).catchError((onError) {
-        isLaoding = false;
+        isLoading = false;
         emit(ForgetPasswordLoading());
         log('ForgetPassword error=>  $onError');
       });
